@@ -1,0 +1,48 @@
+//------------------------------------------------
+//   File: audioinfo.bss
+//   Table: AudioMap_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uchar B;
+        uchar G;
+        uchar R;
+        uchar A;
+        uchar B;
+        uchar G;
+        uchar R;
+        uchar A;
+        int32 bankNoNormaiDay;
+        int32 bankNoNormaiNight;
+        int32 bankNoCombatLv1;
+        int32 bankNoCombatLv2;
+        int32 bankNoCombatNightLv1;
+        int32 bankNoCombatNightLv2;
+        int32 bankNoCombatBoss;
+        int32 bankNoCombatHpLow;
+        int32 bankNoRiding;
+        int32 bankNoRacing;
+        int32 bankNoVillageSiege;
+        int32 bankNoSiegewarfare;
+        int32 bankNoUndersea;
+        int32 musicIdxNormaiDay;
+        int32 musicIdxNormaiNight;
+        int32 musicIdxCombatLv1;
+        int32 musicIdxCombatLv2;
+        int32 musicIdxCombatNightLv1;
+        int32 musicIdxCombatNightLv2;
+        int32 musicIdxCombatBoss;
+        int32 musicIdxCombatHpLow;
+        int32 musicIdxRiding;
+        int32 musicIdxRacing;
+        int32 musicIdxVillageSiege;
+        int32 musicIdxSiegewarfare;
+        int32 musicIdxUndersea;
+        int32 unk; // 1
+        int32 bankNoEnvironment;
+    } audioData;
+}

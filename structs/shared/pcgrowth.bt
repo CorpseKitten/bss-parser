@@ -1,0 +1,66 @@
+//------------------------------------------------
+//   File: pcgrowth.bss
+//   Table: PC_Set_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+local int32 c;
+int32 classCount;
+for (a = 0; a < classCount; ++a)
+{
+    struct
+    {
+        byte classType;
+        byte unk; // always 1
+        byte classType;
+        int16 characterKey;
+        int16 backgroundCharacterKey;
+        int16 alterEgoKey;
+        int16 WorkerCharacterKey;
+        byte unk;  // 32 class count
+        int32 defaultItemListCount;
+        for (b = 0; b < defaultItemListCount; ++b)
+        {
+            struct
+            {
+                int32 itemId;
+            } defaultItemListData;
+        }
+        float startPositionX;
+        float startPositionZ;
+        float startPositionY;
+        int32 startDirection;
+        int32 weaponEnduranceDecreaseRate;
+        int32 armorEnduranceDecreaseRate;
+        int32 armorEnduranceArrowDecreaseRate;
+        int16 fieldNo;
+        byte combateResourceType;
+        int32 startWayPointNo;
+        int64 classNameLength;
+        wchar_t className[classNameLength];
+        int64 classDescLength;
+        wchar_t classDesc[classDescLength];
+        int64 classMovieLength;
+        wchar_t classMovie[classMovieLength];
+        byte unk; // always 1
+        for (c = 0; c < 4; ++c)
+        {
+            struct
+            {
+                int64 resourceSaveEffectLength;
+                char resourceSaveEffect[resourceSaveEffectLength];
+            } resourceSaveEffectData;
+        }
+        float comboColor1;
+        float comboColor2;
+        float comboColor3;
+        float awakenComboColor1;
+        float awakenComboColor2;
+        float awakenComboColor3;
+        byte mainAttackType;
+        int32 defaultVisibleWeapon;
+        int32 defaultVisibleSubWeapon;
+        int32 defaultVisibleAwakenWeapon;
+        byte isOpen;
+    } PcGrowth;
+}

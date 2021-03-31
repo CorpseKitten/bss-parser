@@ -1,0 +1,38 @@
+//------------------------------------------------
+//   File: exploration.bss
+//   Table: Explore_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int32 waypointKey;
+        int16 unk;
+        int32 waypointKey;
+        int64 nameLength;
+        wchar_t name[nameLength];
+        int16 unk;
+        char isAutoDiscovery;
+        char isMainNode;
+        char maxLevel;
+        int16 minorSiegeRegion;
+        int16 givingDropItemKeyOnDiscovery;
+        int16 givingDropItemKeyOnInvestment;
+        float discoveryRange;
+        int32 unk;
+        int64 descriptionLength;
+        wchar_t description[descriptionLength];
+        int32 unk;
+        int16 decorationStaticKey;
+        int64 unk;
+        char exposeRange;
+        int16 fogCalcSize;
+        char skip[50];
+        float exploreRessurectionPointX;
+        float exploreRessurectionPointY;
+        float exploreRessurectionPointZ;
+        char nodeKind;
+    } exploreData;
+}

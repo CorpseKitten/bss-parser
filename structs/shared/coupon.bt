@@ -1,0 +1,28 @@
+//------------------------------------------------
+//   File: coupon.bss
+//   Table: Coupon_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 couponKey;
+        char unk;
+        int64 unk1Length;
+        wchar_t unk1[unk1Length];
+        int64 nameLength;
+        wchar_t name[nameLength];
+        int32 expirationDate;
+        int64 discountRate;
+        int32 maxDiscountPearls;
+        int64 iconPathLength;
+        wchar_t iconPath[iconPathLength];
+        int64 categorysLength;
+        wchar_t categorys[categorysLength];
+        int16 couponCategoryMain;
+        int16 couponCategoryMiddle;
+        int16 couponCategorySmall;
+    } couponData;
+}

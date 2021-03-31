@@ -1,0 +1,50 @@
+//------------------------------------------------
+//   File: itemsubgroup.bss
+//   Table: ItemSubGroup_Table
+//------------------------------------------------
+typedef struct SubGroupData
+{
+    uint16		ItemKey;
+    int16		EnchantLevel;
+    int32		SelectRate;
+    int64		SelectConditionLength;
+    wchar_t		SelectCondition[SelectConditionLength];
+    byte		DoPetAddDrop;
+    int64		MinCount;
+    int64		MaxCount;
+    int32		IntimacyVariation;
+    int64		unk;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    int64		unk;
+    int64		unk;
+    int64		unk;
+    int64		unk;
+    int64		unk;
+    int64		unk;
+    int64		unk;
+    int64		unk;
+    int64		unk;
+    int32		unk;
+};
+
+typedef struct BodyData
+{
+    uint16          ItemSubGroupKey;
+    int64           unkStrLen;
+    char            unkStr[unkStrLen];
+    int32           TotalSelectRate;
+    int32           SubGroupDataCount;
+    SubGroupData    SubGroups[SubGroupDataCount] <optimize=false>;
+};
+
+struct Data
+{
+    int32       count;
+    BodyData    bodyData[count] <optimize=false>;
+};
+
+Data data;

@@ -1,0 +1,40 @@
+//------------------------------------------------
+//   File: encyclopedia.bss
+//   Table: Encyclopedia_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 key;
+        int32 typeKey;
+        int32 type;
+        char category;
+        char rareness;
+        int16 baseSize;
+        int64 fishExpRate;
+        int32 fishExpType;
+        int64 descLength;
+        wchar_t desc[descLength];
+        int64 imageLength;
+        wchar_t image[imageLength];
+        // each 3 int32 are merged = xDx+x(ex: 1D1+1)
+        int32 varySize_0; // x
+        int32 varySize_0; // Dx
+        int32 varySize_0; // +x
+        int32 varySize_1; // x
+        int32 varySize_1; // Dx
+        int32 varySize_1; // +x
+        int32 varySize_2; // x
+        int32 varySize_2; // Dx
+        int32 varySize_2; // +x
+        int32 varySize_3; // x
+        int32 varySize_3; // Dx
+        int32 varySize_3; // +x
+        int32 varySize_4; // x
+        int32 varySize_4; // Dx
+        int32 varySize_4; // +x
+    } encyclopediaData;
+}

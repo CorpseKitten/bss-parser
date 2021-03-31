@@ -1,0 +1,24 @@
+//------------------------------------------------
+//      File: guildhousecraftskill.bss
+//     Table: GuildHouseCraftSkillInfo
+//------------------------------------------------
+typedef struct SkillEntry
+{
+    uint16 SkillNo1;
+    uint16 SkillNo2;
+};
+
+typedef struct BodyData
+{
+    int32 HouseInfoRecipeKey;
+    int32 HouseInfoRecipeKey;
+    SkillEntry Skills[3];
+};
+
+struct Data
+{
+	uint32   count;
+	BodyData bodyData[count] <optimize=false>;
+};
+
+Data data;

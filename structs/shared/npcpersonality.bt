@@ -1,0 +1,28 @@
+//------------------------------------------------
+//      File: npcpersonality.bss
+//     Table: Personality_Table 
+//------------------------------------------------
+
+struct ThemeData
+{
+    int16 Theme;
+    int16 NeedCount;
+};
+
+struct BodyData
+{
+    uint16      Npc;
+    ThemeData   Theme[3] <optimize=false>;
+    uint16		Npc;
+    float		MinDv;
+    float		MaxDv;
+    float		MinPv;
+    float		MaxPv;
+    int16		ZodiacSignIndexKey;
+};
+
+struct
+{
+    int32 count;
+    BodyData data[count] <optimize=false>;
+} Data;

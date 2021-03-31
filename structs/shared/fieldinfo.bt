@@ -1,0 +1,59 @@
+//------------------------------------------------
+//   File: fieldinfo.bss
+//   Table: Field_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 unk;
+        int16 unk;
+        int64 fieldNameLength;
+        wchar_t fieldName[fieldNameLength];
+        int64 resourceNameLength;
+        wchar_t resourceName[resourceNameLength];
+        int64 unkLength;
+        wchar_t unkName[unkLength];
+        float startPositionX;
+        float startPositionY;
+        float startPositionZ;
+        int32 mapSectorStartX;
+        int32 mapSectorStartY;
+        int32 mapSectorStartZ;
+        int32 mapSectorEndX;
+        int32 mapSectorEndY;
+        int32 mapSectorEndZ;
+        float X;
+        float Y;
+        float Z;
+        float X;
+        float Y;
+        float Z;
+        int32 obstaclePrecision; // need more tests
+        int32 unk;
+        int32 unk;
+        int32 unk;
+        int32 unk;
+        int32 unk;
+        int32 unk;
+        char unk; // regionMapIndex or MiniMapIndex
+        int16 unk; // regionMapIndex or MiniMapIndex
+        int16 fishingMapIndex;
+        int16 waterInfoMaIndex;
+        int16 siegeInfoMapIndex;
+        int16 villageSiegeInfoMapIndex;
+        int16 undergroundMapIndex;
+        int16 audioMapIndex;
+        char isSaveComplete;
+        int32 fieldLevel;
+        char isRidable;
+        int16 enterEnableUserCount;
+        char useRangeSpawn;
+        char useReturnPosition;
+        int32 itemDropRate;
+        int32 bankNoMusic;
+        int32 bankNoEnviroment;
+    } fieldInfoData;
+}

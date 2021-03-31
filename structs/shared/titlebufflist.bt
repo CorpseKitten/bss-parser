@@ -1,0 +1,19 @@
+//------------------------------------------------
+//   File: titlebufflist.bss
+//   Table: TitleBuff_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int32 count;
+        uint16 skillLevel;
+        uint16 skillNo;
+        int64 descriptionLenght;
+        wchar_t description[descriptionLenght];
+        int64 buffDescriptionLenght;
+        wchar_t buffDescription[buffDescriptionLenght];
+    } titleBuffData;
+}

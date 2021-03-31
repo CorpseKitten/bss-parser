@@ -1,0 +1,26 @@
+//------------------------------------------------
+//   File: buildingupgrade.bss
+//   Table: BuildingUpgrade_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 index;
+        int32 upgradeTime;
+        int32 upgradeLevel;
+        int16 targetCharacterkey;
+        int32 sourceItemlistSize;
+        for (b = 0; b < sourceItemlistSize; ++b)
+        {
+            struct
+            {
+                int32 sourceItemKey;
+                int64 sourceItemCount;
+            } sourceItemData;
+        }
+    } buildingUpgradeData;
+}

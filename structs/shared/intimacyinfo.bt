@@ -1,0 +1,39 @@
+//------------------------------------------------
+//      File: intimacyinfo.bss
+//     Table: 
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        int32 unkCount;
+        for (b = 0; b < unkCount; ++b)
+        {
+            struct
+            {
+                int16 unk;
+                int32 unk;
+                int32 unk;
+                int32 unk;
+                int64 unkStrLen1;
+                char unkStr1[unkStrLen1];
+                int64 unkStrLen2;
+                wchar_t unkStr2[unkStrLen2];
+                int32 unk;
+            } intimacy_entry;
+        }
+    } intimacy_info;
+}
+
+for (a = 0; a < 6; ++a)
+{
+    struct
+    {
+        int64 unkStrLen;
+        char unkStr[unkStrLen];
+    } footer;
+}

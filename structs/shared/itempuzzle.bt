@@ -1,0 +1,34 @@
+//------------------------------------------------
+//   File: itempuzzle.bss
+//   Table: ItemPuzzle_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 puzzleCount;
+for (a = 0; a < puzzleCount; ++a)
+{
+    struct
+    {
+        int16 puzzleKey;
+        struct
+        {
+            for (b = 0; b < 5; ++b) // 5 lines per puzzle key
+            {
+                struct
+                {
+                    int32 puzzle0;
+                    int32 puzzle1;
+                    int32 puzzle2;
+                    int32 puzzle3;
+                    int32 puzzle4;
+                } puzzleData;
+            }
+            int32 baseItemKey; // first item of the first row
+            int32 unk; // 0,1
+            int16 unk; // 0,1,2,3
+            int16 unk; // 0,1,2,3,4
+            int32 makeItemKey;
+            int16 unk; // always 5
+        } puzzleKeyData;
+    } itemPuzzleData;
+}

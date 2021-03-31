@@ -1,0 +1,71 @@
+//------------------------------------------------
+//      File: guildquest.bss
+//     Table: GuildQuest_Table
+//    Status: Bugged
+//------------------------------------------------
+local int32 a;
+local int32 b;
+local int32 c;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        readUnicodeString(); // +24
+        readUnicodeString(); // +32
+        int32 unk; // +88
+        struct
+        {
+            int32 unkCount;
+            for (c = 0; c < unkCount; ++c)
+                sub_140D9FAAC();
+            int32 unkCount;
+            for (c = 0; c < unkCount; ++c)
+                sub_140D9FAAC();
+            int64 unk;
+        } sub_140da0284; // +96
+        int16 unk; // +152
+        readUnicodeString(); // +160
+        readUnicodeString(); // +192
+        readUnicodeString(); // +224
+        int32 unk; // +256
+        int32 unk; // +260
+        int64 unk; // +272
+        byte  unk; // +280
+        int64 unk; // +288
+        int32 unk; // +300
+
+        int32 unkCount; // +312
+        for (b = 0; b < unkCount; ++b)
+            int32 unk;
+    } guild_quest;
+
+    break;
+}
+
+wchar_t[] readUnicodeString()
+{
+    struct
+    {
+        int64 strLen;
+        wchar_t str[strLen];
+        return str;
+    } unicode_string;
+}
+
+void sub_140D9FAAC()
+{
+    int32 unk; // +0
+    int64 unk; // +8
+    int32 unk; // +16
+    int32 unk; // +20
+    byte  unk; // +24
+    int32 unk; // +28
+    int32 unk; // +10
+    int64 unk; // +48
+    int16 unk; // +28
+    int32 unk; // +60
+    int32 unk; // +16
+    int16 unk; // +40
+}

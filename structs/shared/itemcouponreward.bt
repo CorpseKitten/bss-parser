@@ -1,0 +1,19 @@
+//------------------------------------------------
+//      File: itemcouponreward.bss
+//     Table: 
+//------------------------------------------------
+local int32 a;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        int32 unk;
+        int16 unk;
+        byte  unk;
+        int32 unk;
+    } item_coupon_table;
+}
+
+// another loop here!

@@ -1,0 +1,40 @@
+//------------------------------------------------
+//   File: auction.bss
+//   Table: Auction_Table + Auction_InfoTable
+//------------------------------------------------
+local int32 a;
+local int32 b;
+local int32 c;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 actionNo;
+        int64 auctionStartCumulatedTickCount;
+        int64 auctionInterval;
+        int64 auctionDescLength;
+        wchar_t auctionDesc[auctionDescLength];
+        char auctionType; // goodsType
+        int16 unk; // always -1
+        int64 unk; // 0
+        int32 unkListCounter;
+        for (b = 0; b < unkListCounter; ++b)
+        {
+            struct
+            {
+                int16 key; // guess
+                int64 price; // guess
+            } unkData;
+        }
+        int32 auctionListDataCounter;
+        for (c = 0; c < auctionListDataCounter; ++c)
+        {
+            struct
+            {
+                int16 key;
+                int64 price;
+            } auctionListData;
+        }
+    } auctionData;
+}

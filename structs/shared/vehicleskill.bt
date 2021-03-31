@@ -1,0 +1,58 @@
+//------------------------------------------------
+//   File: vehicleskill.bss
+//   Table: VehicleSkill_Table + VehicleSkillOwner_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+byte rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        byte index;
+        int64 nameLength;
+        wchar_t name[nameLength];
+        int32 maxExp;
+        int32 addExpForCheck;
+        int64 basePrice;
+        int32 addMatingRate;
+        byte isLearnFromItem;
+        int64 iconLength;
+        wchar_t icon[iconLength];
+        int64 descLength;
+        wchar_t desc[descLength];
+        int32 isTrainingSkillCount;
+        for (b = 0; b < isTrainingSkillCount; ++b)
+        {
+            int16 horseNpcId;
+        }
+        byte isMarketFilter;
+    } vehicleSkillData;
+}
+
+char separator[102]; // zeroes diving the tables
+
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uint16 characterKey;
+        uint16 characterKey;
+        struct
+        {
+            for (b = 0; b < 55; ++b)
+                int32 able; // servant chance to learn this skill
+        } isAbleToLearnSkill;
+        struct
+        {
+            for (b = 0; b < 55; ++b)
+                int32 addExp; // exp amount receievd on learning this skill
+        } addedExpForLearningSkill;
+        struct
+        {
+            for (b = 0; b < 55; ++b) // servant can or not learn this skill
+                byte isLearn;
+        } skillCanBeLearntInfo;
+    } vehicleSkillOwnerData;
+}

@@ -1,0 +1,55 @@
+//------------------------------------------------
+//      File: intimacyrelation.bss
+//     Table:  NpcRelation
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        uint16 npcKey;
+        for (b = 0; b < 5; ++b)
+        {
+            struct
+            {
+                int64 discoverConditionLength;
+                wchar_t discoverCondition[discoverConditionLength];
+            } discoverConditionData;
+        }
+
+        for (b = 0; b < 5; ++b)
+        {
+            struct
+            {
+                int64 discoverDialogLength;
+                wchar_t discoverDialog[discoverDialogLength];
+            } discoverDialog;
+        }
+
+        struct
+        {
+            int64 coveredDialogLength;
+            wchar_t coveredDialog[coveredDialogLength];
+        } coveredDialogData;
+        struct
+        {
+            int64 discoverCutsceneLength;
+            wchar_t discoverCutscene[discoverCutsceneLength];
+        } discoverCutsceneData;
+        struct
+        {
+            int64 discoverDialogLength;
+            wchar_t discoverDialog[discoverDialogLength];
+        } discoverDialogData;
+        struct
+        {
+            int64 discoverFunctionLength;
+            wchar_t discoverFunction[discoverFunctionLength];
+        } discoverFunctionData;
+        uint16 npcKey;
+        int32 npcImportance;
+    } intimacy_relation;
+}

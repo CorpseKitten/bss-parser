@@ -1,0 +1,27 @@
+//------------------------------------------------
+//   File: villagesiegeinfo.bss
+//   Table: VillageSiege_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uchar B;
+        uchar G;
+        uchar R;
+        uchar A;
+        uchar B;
+        uchar G;
+        uchar R;
+        uchar A;
+        int32 regionKeyCount;
+        for (b = 0; b < regionKeyCount; ++b)
+            int16 regionkey;
+        int64 regionNameLength;
+        wchar_t regionName[regionNameLength];
+        int16 villageSiegeKey;
+    } villageSiegeInfoData;
+}

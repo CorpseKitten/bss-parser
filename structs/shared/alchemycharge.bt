@@ -1,0 +1,25 @@
+//------------------------------------------------
+//   File: alchemycharge.bss
+//   Table: AlchemyCharge_Table
+//------------------------------------------------
+typedef struct ChargeData
+{
+   uint32  Key;
+   uint32  Type;
+   uint32  ItemKey;
+   uint32  ChargePoint;
+};
+
+typedef struct BodyData
+{
+   uint32     count;
+   ChargeData chargeData[count] <optimize=false>;
+};
+
+struct Data
+{
+   uint32     count;
+   BodyData   bodyData[count] <optimize=false>;
+};
+
+Data data;

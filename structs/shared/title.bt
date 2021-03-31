@@ -1,0 +1,42 @@
+//------------------------------------------------
+//   File: title.bss
+//   Table: 
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int32 unkCount;
+        for (b = 0; b < unkCount; ++b)
+        {
+            struct
+            {
+                int32 unk;
+            } unkTitleData;
+        }
+        int32 key;
+        int64 titleLenght;
+        wchar_t title[titleLenght];
+        int64 descriptionLenght;
+        wchar_t description[descriptionLenght];
+        int32 type;
+        int32 category;
+        int32 parameter1;
+        int32 parameter2;
+        int32 parameter3;
+        int32 parameter1;
+        int32 parameter2;
+        int64 acquiredExpirationDate;
+        int64 applyExpirationDate;
+        int64 titleConditionLenght;
+        wchar_t titleCondition[titleConditionLenght];
+        int64 effectNameLength;
+        char effectName[effectNameLength];
+        int64 applyColorLength;
+        char applyColor[applyColorLength];
+        uint32 unk;
+    } titleData;
+}

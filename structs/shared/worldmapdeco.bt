@@ -1,0 +1,21 @@
+//------------------------------------------------
+//   File: worldmapdeco.bss
+//   Table: WorlmapDeco_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 index;
+        int16 index;
+        int64 worldMapObjectFileLength;
+        char worldMapObjectFile[worldMapObjectFileLength];
+        float X;
+        float Y;
+        float Z;
+        float scale;
+        float rotation;
+    } worldMapDecoData;
+}

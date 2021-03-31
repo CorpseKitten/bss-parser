@@ -1,0 +1,40 @@
+//------------------------------------------------
+//      File: itemhiddengroup.bss
+//     Table: ItemHiddenGroup_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        int16 index;
+        int64 unk;
+        int64 unk;
+        int32 unk_rate;
+        int64 reward_item_count;
+        struct
+        {
+            int64 monsterCount;
+            for (b = 0; b < monsterCount; ++b)
+            {
+                int16 monster_character_key;
+            }
+        } monster_list;
+
+        struct
+        {
+            for (b = 0; b < 32; ++b)
+            {
+                struct
+                {
+                    byte class_key;
+                    byte content_group_key;
+                    int16 unk;
+                } class;
+            }
+        } allowed_classes;
+    } item_hidden_group;
+}

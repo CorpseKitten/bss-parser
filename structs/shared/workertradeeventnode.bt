@@ -1,0 +1,24 @@
+//------------------------------------------------
+//   File: workertradeventnode.bss
+//   Table: TradEventNode_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int32 waypoint;
+        int32 eventkeyCount;
+        for (b = 0; b < eventkeyCount; ++b)
+        {
+            struct
+            {
+                int32 eventKey; // starts from eventKey1
+            } eventKeyData;
+        }
+        int32 unk;
+        int32 waypoint;
+    } tradeEventNodeData;
+}

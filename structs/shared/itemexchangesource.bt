@@ -1,0 +1,52 @@
+//------------------------------------------------
+//   File: itemexchangesource.bss
+//   Table: ItemExchangeSource
+//------------------------------------------------
+
+struct ItemData
+{
+    int32 ItemIndex;
+    int64 ItemCount;
+};
+
+struct BodyData
+{
+    uint16      MapKeyIndex;
+    int32		Index;
+    byte		NeedObjectSkillNo;
+    byte		ExchangeType;
+    ItemData    CraftingZoneCheck;
+    ItemData    CraftingPublic;
+    ItemData    CraftingPrivate;
+    int32       ItemListCount;
+    ItemData    ItemList[ItemListCount] <optimize=false>;
+    ItemData    MainItem;
+    byte		ProductDataType;
+    int32		zero;
+    int64		zero;
+    int64		CraftingTime;
+    int16		zero;
+    uint16		ItemDropID;
+    uint16		NpcWorkerDropIDForLuck;
+    uint16		CraftCharacterKey;
+    int64		RecipeResultIconLength;
+    wchar_t		RecipeResultIcon[RecipeResultIconLength];
+    int64		PlantDescriptionLength;
+    wchar_t		PlantDescription[PlantDescriptionLength];
+    int64		PlantDetailDescriptionLength;
+    wchar_t		PlantDetailDescription[PlantDetailDescriptionLength];
+    int32       unkCount1;
+    int32       unkData1[unkCount1];
+    byte        WorkAniType;
+    int32       zero;
+    int32       ItemExchangeRepeatGroupCount;
+    int16       ItemExchangeRepeatGroup[ItemExchangeRepeatGroupCount];
+    int32       FirstWorkingIndex;
+    int32       DailyWorkingCount;
+};
+
+struct 
+{
+    int32 count;
+    BodyData data[count] <optimize=false>;
+} Data;

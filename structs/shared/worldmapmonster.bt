@@ -1,0 +1,23 @@
+//------------------------------------------------
+//   File: worldmapmonster.bss
+//   Table: WorldmapMonster
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 indexKey;
+        int16 indexKey;
+        int64 recomendedLevelLength;
+        wchar_t recomendedLevel[recomendedLevelLength];
+        int64 regionNameLength;
+        wchar_t regionName[regionNameLength];
+        float X;
+        float Y;
+        float Z;
+        int64 monsterIconFileLength;
+        char monsterIconFile[monsterIconFileLength];
+    } worldMapMonsterData;
+}

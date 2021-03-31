@@ -1,0 +1,47 @@
+//------------------------------------------------
+//      File: instancedungeonpc.bss
+//     Table: InstanceDungeonPcStat
+//------------------------------------------------
+local int32 a;
+local int32 c;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        byte index;
+        float hp;
+        int32 mp;
+        int32 hp_regen;
+        int32 mp_regen;
+        int32 offensiveStatsCount;
+        struct
+        {
+            for (c = 0; c < offensiveStatsCount; ++c)
+            {
+                struct
+                {
+                    int64 damageLength;
+                    wchar_t DD[damageLength]; // 3 damageTypes; DDD, RDD, MDD
+                    float HIT; // 3 accuracyTypes; DHIT, RHIT, MHIT
+                } offensiveStats;
+            }
+        } offensiveStatsData;
+        int32 defensiveStatsCount;
+        struct
+        {
+            for (c = 0; c < defensiveStatsCount; ++c)
+            {
+                struct
+                {
+                    float DV;
+                    float HDV;
+                    float PV;
+                    float HPV;
+                } defensiveStats;
+            }
+            int32 unkRate;
+        } defensiveStatsData;
+    } instance_dungeon_pc;
+}

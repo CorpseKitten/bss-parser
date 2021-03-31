@@ -1,0 +1,30 @@
+//------------------------------------------------
+//   File: floatfishing.bss
+//   Table: FloatFishing_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uint16		FishingGroupKey;
+        int32		MinWaitTime;
+        int32		MaxWaitTime;
+        int32		PointRemainTime;
+        int32		MinFishCount;
+        int32		MaxFishCount;
+        int32		AvailableFishingLevel;
+        int32		ObserveFishingLevel;
+        int16		DropID1;
+        int16		DropID2;
+        int16		DropID3;
+        int16		DropID4;
+        int16		DropID5;
+        int32		DropRate1;
+        int32		DropRate2;
+        int32		DropRate3;
+        int32		DropRate4;
+        int32		DropRate5;
+    } floatFishingData;
+}

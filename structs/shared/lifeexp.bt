@@ -1,0 +1,23 @@
+//------------------------------------------------
+//   File: lifeexp.bss
+//   Table: LifeEXP_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 lifeExpTypeCount;
+for (a = 0; a < lifeExpTypeCount; ++a)
+{
+    struct
+    {
+        int32 levelCount;
+        for (b = 0; b < levelCount; ++b)
+        {
+            struct
+            {
+                char type;
+                int32 level;
+                int64 exp;
+            } lifeExpLevelData;
+        }
+     } lifeExpTypeData;
+}

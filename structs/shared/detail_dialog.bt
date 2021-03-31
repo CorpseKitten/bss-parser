@@ -1,0 +1,67 @@
+//------------------------------------------------
+//   File: detail_dialog.bss
+//   Table: Dialog_Table
+//------------------------------------------------
+typedef struct DefaultVoiceData
+{
+    uint16   voiceId;
+};
+
+typedef struct ButtonData
+{
+    uint64   conditionSize;
+    wchar_t  Condition[conditionSize];
+    uint64   buttonSize;
+    wchar_t  Button[buttonSize];
+    uint16   DialogNo;
+};
+
+typedef struct DialogData
+{
+    uint64   conditionSize;
+    wchar_t  Condition[conditionSize];
+    uint64   buttonSize;
+    wchar_t  Button[buttonSize];
+    uint32   ButtonType;
+    uint64   dialogSize;
+    wchar_t  Dialog[dialogSize];
+    uint64   functionSize;
+    wchar_t  Function[functionSize];
+    uint16   DialogNo;
+};
+
+typedef struct FuncDialogData
+{
+   uint64   funcDialogSize;
+   wchar_t  FuncDialog[funcDialogSize];
+};
+
+typedef struct BodyData
+{
+    uint16   Key;
+    uint16   Key2;
+    uint16   Npc;
+    uint16   DialogIndex;
+    int64    mainSceneLength;
+    char     MainScene[mainSceneLength];
+    int64    nameLength;
+    char     Name[nameLength];
+    int64    mainDialogLength;
+    wchar_t  MainDialog[mainDialogLength];
+    uint32   funcDialogSize;
+    FuncDialogData funcDialogData[funcDialogSize] <optimize=false>;
+    uint32   dialogSize;
+    DialogData dialogData[dialogSize] <optimize=false>;
+    uint32     buttonSize;
+    ButtonData buttonData[buttonSize] <optimize=false>;
+    uint64   defaultVoiceSize;
+    DefaultVoiceData defaultVoice[defaultVoiceSize] <optimize=false>;
+};
+
+struct Data
+{
+   uint32             count;
+   BodyData           bodyData[count] <optimize=false>;
+};
+
+Data data;

@@ -1,0 +1,22 @@
+//------------------------------------------------
+//--- 010 Editor v7.0.2 Binary Template
+//
+//      File: guildskillexperience.bss
+//     Table: GuildSkillPointEXP_Table
+//------------------------------------------------
+typedef struct BodyData
+{
+	uint16 Index;
+	uint16 SkillLevel;
+	uint32 RequireExp;
+	uint32 RequireSkillExpLimit;
+	ubyte  AquiredPoint;
+};
+
+struct Data
+{
+	uint32 	 count;
+	BodyData bodyData[count] <optimize=false>;
+};
+
+Data data;

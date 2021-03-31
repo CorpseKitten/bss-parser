@@ -1,0 +1,19 @@
+//------------------------------------------------
+//      File: itemimprovementsource.bss
+//     Table: ItemImprovementSource_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        int32 source_item_key;
+        int32 result_count;
+        for (b = 0; b < result_count; ++b)
+            int32 result;
+        int32 equip_type;
+    } item_improvement_source;
+}

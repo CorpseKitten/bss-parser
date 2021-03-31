@@ -1,0 +1,27 @@
+//------------------------------------------------
+//   File: fieldboss.bss
+//   Table: FieldBoss_Table
+//------------------------------------------------
+
+struct DropData {
+    uint32 Rank;
+    uint16 DropGroupKey;
+};
+
+struct BodyData {
+    uint16   MapKey;
+    char     TypeKey;
+    uint16   CharacterKey;
+    uint32   Type1Count;
+    DropData DropsType1[Type1Count] <optimize=false>;
+    uint32   Type2Count;
+    DropData DropsType2[Type2Count] <optimize=false>;
+    uint32   Type3Count;
+    DropData DropsType2[Type3Count] <optimize=false>;
+};
+
+
+struct {
+    int32    count;
+    BodyData data[count] <optimize=false>;
+} Data;

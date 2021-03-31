@@ -1,0 +1,34 @@
+//------------------------------------------------
+//   File: charactervoice.bss
+//   Table: CharacterVoice_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+local int32 c;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct {
+        int16 characterKey;
+        int32 voiceCount;
+        for (b = 0; b < voiceCount; ++b)
+        {
+            struct
+            {
+                int64 voiceTypeLength;
+                char voiceType[voiceTypeLength];
+            } voiceData;
+        }
+        int32 extraVoiceCount;
+        for (c = 0; c < extraVoiceCount; ++c)
+        {
+            struct
+            {
+                int64 voiceTypeLength;
+                char voiceType[voiceTypeLength];
+            } voiceDataExtra;
+        }
+        int32 unk;
+        int32 unk;
+    } charVoiceData;
+}

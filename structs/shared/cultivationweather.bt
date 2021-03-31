@@ -1,0 +1,34 @@
+//------------------------------------------------
+//   File: cultivationweather.bss
+//   Table: CultivationWeather_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+local int32 c;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uint16 exchangeKey;
+        uint16 exchangeKey;
+        int32 weatherKeyDataCount;
+        for (b = 0; b < weatherKeyDataCount; ++b)
+        {
+            struct
+            {
+                char weatherKind;
+                int32 weatherKindCount;
+                for (c = 0; c < weatherKindCount; ++c)
+                {
+                    struct
+                    {
+                        float weatherStartRate;
+                        float weatherEndRate;
+                        int32 productSpeedrate;
+                    } weatherKindData;
+                }
+            } weatherKeyData;
+        }
+    } weatherData;
+}

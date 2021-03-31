@@ -1,0 +1,20 @@
+//------------------------------------------------
+//   File: cutscene.bss
+//   Table: CutScene_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uint32 unk;
+        uint32 unk;
+        int64 fileNameLength;
+        wchar_t fileName[fileNameLength];
+        int64 cutSceneNameLength;
+        wchar_t cutSceneName[cutSceneNameLength];
+        int64 descriptionLength;
+        wchar_t description[descriptionLength];
+    } customizedData;
+}

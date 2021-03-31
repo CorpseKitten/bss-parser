@@ -1,0 +1,22 @@
+//------------------------------------------------
+//      File: workertradeitem.bss
+//     Table: TradeItem_Table
+//------------------------------------------------
+
+struct BodyData
+{
+    int32		TradeItemKey;
+    int64		NameLength;
+    wchar_t		Name[NameLength];
+    int64		unk;
+    int32		StandardPrice;
+    int64		IconImageFileLength;
+    wchar_t		IconImageFile[IconImageFileLength];
+    int32		Weight;
+};
+
+struct
+{
+    int32 count;
+    BodyData data[count] <optimize=false>;
+} Data;

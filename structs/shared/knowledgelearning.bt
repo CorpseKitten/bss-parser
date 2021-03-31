@@ -1,0 +1,19 @@
+//------------------------------------------------
+//      File: knowledgelearning.bss
+//     Table: KnowledgeLearning_Table
+//------------------------------------------------
+
+struct BodyData
+{
+    int32		Key;
+    int32		Key;
+    int32		LearningType;
+    int32		SelectRate;
+    int32		KnowledgeIndex;
+};
+
+struct
+{
+    int32       count;
+    BodyData    data[count] <optimize=false>;    
+} Data;

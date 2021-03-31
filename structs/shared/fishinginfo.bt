@@ -1,0 +1,36 @@
+//------------------------------------------------
+//   File: fishinginfo.bss
+//   Table: Fishing_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uchar B;
+        uchar G;
+        uchar R;
+        uchar A;
+        uchar B;
+        uchar G;
+        uchar R;
+        uchar A;
+        int16 dropId;
+        int16 dropIdHarpoon;
+        int16 dropIdNet;
+        int32 minWaitTime;
+        int32 maxWaitTime;
+        int16 dropId1;
+        int16 dropId2;
+        int16 dropId3;
+        int16 dropId4;
+        int16 dropId5;
+        int32 dropRate1;
+        int32 dropRate2;
+        int32 dropRate3;
+        int32 dropRate4;
+        int32 dropRate5;
+    } fishingData;
+}

@@ -1,0 +1,35 @@
+//------------------------------------------------
+//      File: mainquest.bss
+//   Authors: MainQuest_Table
+//------------------------------------------------
+typedef struct LoopData
+{
+    int16		QuestGroup;
+    int16		QuestID;
+    int64		AcceptConditionTextLength;
+    wchar_t		AcceptCondition[AcceptConditionTextLength];
+    int64		HideConditionsLength;
+    wchar_t		HideConditions[HideConditionsLength];
+    int64		VisibleConditionsLength;
+    wchar_t		VisibleConditions[VisibleConditionsLength];
+    byte		IsSubQuest;
+};
+
+
+typedef struct BodyData
+{
+    int16		MainQuestKey;
+    int64		QuestNameLength;
+    wchar_t		QuestName[QuestNameLength];
+    byte		unk;
+    int32       QuestListCount;
+    LoopData    QuestList[QuestListCount] <optimize=false>;
+};
+
+struct Data
+{
+    int32       count;
+    BodyData    bodyData[count] <optimize=false>;
+};
+
+Data data;

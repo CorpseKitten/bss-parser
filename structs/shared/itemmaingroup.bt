@@ -1,0 +1,30 @@
+//------------------------------------------------
+//   File: itemmaingroup.bss
+//   Table: ItemMainGroup_Table
+//------------------------------------------------
+typedef struct SubGroupData
+{
+	int32		SelectRate;
+	int64		ConditionLength;
+	wchar_t		Condition[ConditionLength];
+	int16		ItemSubGroupKey;
+};
+
+typedef struct BodyData
+{
+	uint16			ItemMainGroupKey;
+	byte			DoSelectOnlyOne;
+	int64			PlantCraftResultCount;
+	int32			RefreshStartHour;
+	int64			RefreshInterval;
+	int32			SubGroupCount;
+	SubGroupData 	SubGroup[SubGroupCount] <optimize=false>;
+};
+
+struct Data
+{
+	int32 		count;
+	BodyData 	bodyData[count] <optimize=false>;
+};
+
+Data data;

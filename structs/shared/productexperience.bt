@@ -1,0 +1,17 @@
+//------------------------------------------------
+//      File: productexperience.bss
+//     Table: ProductExp_Table 
+//------------------------------------------------
+
+struct BodyData
+{
+    int16		Index;			//(const void *v7
+    int32		ProductRequireEXP;			//v7 + 4
+    byte		unk;			//v7 + 8
+};
+
+struct
+{
+    int32 count;
+    BodyData data[count] <optimize=false>;
+} Data;

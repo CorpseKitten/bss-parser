@@ -1,0 +1,115 @@
+//------------------------------------------------
+//   File: quest.bss
+//   Table: Quest_Table
+//   NOTE: missing 1 collum positions: 
+//   "UnableToGiveUp"
+//------------------------------------------------
+local int32 a;
+local int32 b;
+local int32 c;
+local int32 d;
+int32 count;
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        uint16 orderNpc;
+        uint16 orderNpcDialogIndex;
+        uint16 completeNpc;
+        uint16 completeNpcDialogIndex;
+        int64 completeDisplayLength;
+        wchar_t completeDisplay[completeDisplayLength];
+        uint32 recomendedLevel;
+        int64 acceptConditionsLength;
+        wchar_t acceptConditions[acceptConditionsLength];
+        int64 completeConditionLength;
+        wchar_t completeCondition[completeConditionLength];
+        int64 completeConditionTextLength;
+        wchar_t completeConditionText[completeConditionTextLength];
+        int64 doGuideLen;
+        wchar_t doGuide[doGuideLen];
+        byte is_escort_quest;
+        struct
+        {
+            int32 baseRewardCount;
+            for (b = 0; b < baseRewardCount; ++b)
+            {
+                struct
+                {
+                    int32 unk; // 3
+                    int64 unk; // 0
+                    int32 unk; // 0
+                    int32 unk; // -1
+                    byte  unk; // 15
+                    int32 unk; // 0
+                    int16 itemID;
+                    int16 itemEnchantLevel;
+                    int64 itemCount;
+                    int16 unk;
+                    int32 unk;
+                    int32 unk;
+                    int16 unk;
+                } baseRewardData;
+            }
+            int32 selectRewardCount;
+            for (d = 0; d < selectRewardCount; ++d)
+            {
+                struct
+                {
+                    int32 unk; // 3
+                    int64 unk; // 0
+                    int32 unk; // 0
+                    int32 unk; // -1
+                    byte  unk; // 15
+                    int32 unk; // 0
+                    int16 itemID;
+                    int16 itemEnchantLevel;
+                    int64 itemCount;
+                    int16 unk;
+                    int32 unk;
+                    int32 unk;
+                    int16 unk;
+                } selectRewardData;
+            }
+            int64 unk;
+        } rewardData;
+        int64 expectedPrice;
+        int32 unk;
+        int16 remove_quest_group;
+        int16 remove_quest_id;
+        byte guideAutoErase;
+        int64 titleLength;
+        wchar_t title[titleLength];
+        int64 descLength;
+        wchar_t desc[descLength];
+        int32 positionAndRadiusCount;
+        for (c = 0; c < positionAndRadiusCount; ++c)
+        {
+            struct
+            {
+                float X;
+                float Z;
+                float Y;
+                float radius;
+            } positionAndRadiusData;
+        } 
+        int64 questIconLength;
+        wchar_t questIcon[questIconLength];
+        int64 acceptDialogButtonLength;
+        wchar_t acceptDialogButton[acceptDialogButtonLength];
+        int64 unkLen10;
+        wchar_t unkStr10[unkLen10];
+        int64 completeDialogLength;
+        wchar_t completeDialog[completeDialogLength];
+        int64 progressDialogLength;
+        wchar_t progressDialog[progressDialogLength];
+        int32 repeatTime;
+        byte isUserBaseQuest;
+        int32 region;
+        int32 questType;
+        int32 selectType;
+        int16 questGroup;
+        int16 questId;
+        byte guideForce;
+    } questData;
+}

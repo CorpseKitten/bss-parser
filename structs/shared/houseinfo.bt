@@ -1,0 +1,36 @@
+//------------------------------------------------
+//      File: houseinfo.bss
+//     Table: HouseInfo_New
+//    Status: CKM please finish
+//------------------------------------------------
+typedef struct CraftItem
+{
+	uint32 ItemId;
+	uint32 ItemCount;
+};
+
+typedef struct BodyData
+{
+	uint16 NeedExplorePoint;
+	uint16 NeedHouseKey;
+	uint32 ParentNode;
+	uint32 UnknownDataCount;
+	uint16 UnknownDataList[UnknownDataCount] <optimize=false>;
+	uint32 HouseKeyCount;
+	uint16 HouseKeyList[HouseKeyCount] <optimize=false>;
+	uint32 CraftListCount;
+	CraftItem CraftItemList[CraftListCount] <optimize=false>;
+	uint16 CharacterKey;
+	uint16 Unk1;
+	uint32 Unk2;
+	uint32 Unk3;
+	uint32 Unk4;
+};
+
+struct Data
+{
+	uint32 	 count;
+	BodyData bodyData[count] <optimize=false>;
+};
+
+Data data;

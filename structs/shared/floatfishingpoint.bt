@@ -1,0 +1,25 @@
+//------------------------------------------------
+//   File: floatfishingpoint.bss
+//   Table: FloatFishingPoint_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 pointKey;
+        int32 pointSize;
+        float startPositionX;
+        float startPositionY;
+        float startPositionZ;
+        float endPositionX;
+        float endPositionY;
+        float endPositionZ;
+        int16 fishGroupKey;
+        int32 spawnRate;
+        int16 spawnCharacterKey;
+        int32 spawnActionIndex;
+    } floatFishingPointData;
+}

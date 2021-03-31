@@ -1,0 +1,20 @@
+//------------------------------------------------
+//      File: itemmesh.bss
+//     Table: Item_Mesh_Table
+//------------------------------------------------
+local int32 a;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        uint16 index;
+        int64 use_mesh_file_length;
+        wchar_t use_mesh_file[use_mesh_file_length];
+        byte weapon_material;
+        byte armor_material;
+        int64 use_effect_file_length;
+        char use_effect_file[use_effect_file_length];
+    } item_mesh;
+}

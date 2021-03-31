@@ -1,0 +1,33 @@
+//------------------------------------------------
+//   File: cronenchant.bss
+//   Table: CronEnchantTable
+//------------------------------------------------
+local int32 a;
+local int32 b;
+local int32 c;
+int32 itemClassifyCount;
+for (a = 0; a < itemClassifyCount; ++a)
+{
+    struct
+    {
+        int32 enchantLevelCount;
+        for (b = 0; b < enchantLevelCount; ++b)
+        {
+            struct
+            {
+                int32 entryCount;
+                for (c = 0; c < entryCount; ++c)
+                {
+                    struct
+                    {
+                        char unk;
+                        char enchantLevel;
+                        int32 count;
+                        float idx;
+                        char skip[28];
+                    } entryCountData;
+                }
+            } enchantLevelData;
+        }
+    } itemClassifyData;
+}

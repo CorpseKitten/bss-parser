@@ -1,0 +1,28 @@
+//------------------------------------------------
+//   File: deliverer.bss
+//   Table: Carriage_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 characterKey;
+        int16 characterKey;
+        int32 wayIndex;
+        int32 loadage;
+        int64 price;
+        int64 objectNameLength;
+        char objectName[objectNameLength];
+        for (b = 0; b < 20; ++b)
+        {
+            struct
+            {
+                int64 waypointNameLength;
+                wchar_t waypointName[waypointNameLength];
+            } waypointData;
+        }
+    } delivererData;
+}

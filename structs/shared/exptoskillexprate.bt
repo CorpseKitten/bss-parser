@@ -1,0 +1,15 @@
+//------------------------------------------------
+//   File: exptoskillexprate.bss
+//   Table: ExpToSkillExpRate_Table
+//------------------------------------------------
+local int32 a;
+int32 levelCount;
+for (a = 0; a < levelCount; ++a)
+{
+    struct 
+    {
+        int32 Level;
+        int32 SkillLevel;
+        int32 Experience;
+    } expToSkillExpRateData;
+}

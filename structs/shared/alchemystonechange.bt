@@ -1,0 +1,22 @@
+//------------------------------------------------
+//   File: alchemystonechange.bss
+//   Table: AlchemyStoneChange_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int32 itemKey;
+        int32 itemKey;
+        uint16 mainGroup;
+        int32 needItemKey;
+        int64 needItemCount;
+        int32 breakRate;
+        int32 downRate;
+        uint16 downGroup;
+        int64 conditionLength;
+        wchar_t condition[conditionLength];
+    } alchemyStoneChangeData;
+}

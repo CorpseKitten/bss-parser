@@ -1,0 +1,16 @@
+//------------------------------------------------
+//   File: classskilllist.bss
+//   Table: 
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct {
+        char classType;
+        int32 skillListCont;
+        for (b = 0; b < skillListCont; ++b)
+            int16 skillId;
+    } skillListData;
+}

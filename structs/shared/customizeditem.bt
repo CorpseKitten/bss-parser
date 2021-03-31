@@ -1,0 +1,26 @@
+//------------------------------------------------
+//   File: customizeditem.bss
+//   Table: CustomizedItem_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uint16 customizedItemKey;
+        int32 customizedItemCount;
+        for (b = 0; b < customizedItemCount; ++b)
+        {
+            struct
+            {
+                int64 conditionLength;
+                wchar_t condition[conditionLength];
+                int16 item;
+                int16 enchant;
+            } customizedItemData;
+        }
+    uint16 customizedItemKey;
+    } customizedData;
+}

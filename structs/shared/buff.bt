@@ -1,0 +1,73 @@
+//------------------------------------------------
+//   File: buff.bt
+//   Table: Buff_Table
+//------------------------------------------------
+local int32 a;
+int32 buffCount;
+for (a = 0; a < buffCount; ++a)
+{
+    struct
+    {
+        // confirmed start
+        uint16 index;
+        uint64 buffNameSize;
+        wchar_t buffName[buffNameSize];
+        uint32 level;
+        uint16 group;
+        uint16 conditionType;
+        ubyte moduleType;
+        // confirmed end
+        ubyte RemoveOnDead;
+        ubyte buffType1_BAD_DATA;
+        ubyte applyToGroup_BAD_DATA;
+        ubyte isAbsolute_BAD_DATA;
+        ubyte isOverlapped;     // confirmed
+        ubyte unk;
+        uint32 unk;
+        // confirmed start
+        int64 param0;
+        int64 param1;
+        int64 param2;
+        int64 param3;
+        int64 param4;
+        int64 param5;
+        int64 param6;
+        int64 param7;
+        int64 param8;
+        int64 param9;
+        // confirmed end
+        int32 unk;
+        int32 unk;
+        char BuffType;          // confirmed
+        char unk;
+        char unk;
+        char unk;               // 0,1 | Cannot be: IsAbsolute (59705: [data 1];[bss 0])
+        int32 validityTime;     // confirmed
+        int32 repeatTime;       // confirmed
+        int32 unk; // 0,3
+        int32 unk; // 0
+        int16 unk; // always -1
+        char needEquipType;     // confirmed
+        char unk; // 0
+        char unk; // 0
+        char unk; // 0,1
+        char unk; // 1
+        char unk; // 2
+        char unk; // 0
+        char needEquipSlot;     // confirmed - 6,31 [if needEquipType = 0, than needEquipSlot = 31 (all allowed)]
+        char unk; // 2
+        char RemoveOnDead2_UNK; // 0,1, inverted? looks like removeondead though
+        char ApplyToGroupInverted; // confirmed - 0,1
+        // confirmed start
+        int64 buffEffectLength;
+        wchar_t buffEffect[buffEffectLength];
+        int64 buffIconlength;
+        wchar_t buffIcon[buffIconlength];
+        byte isDisplay;
+        int32 applyrate;
+        int64 descriptionLength;
+        wchar_t description[descriptionLength];
+        byte unk;
+        // confirmed end
+    } BuffData;
+}

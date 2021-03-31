@@ -1,0 +1,65 @@
+//------------------------------------------------
+//   File: challenge.bss
+//   Table: Challenge_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+local int32 c;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct {
+        int16 key;
+        int16 key;
+        int32 type;
+        int64 titleLength;
+        wchar_t title[titleLength];
+        int64 descLength;
+        wchar_t desc[descLength];
+        int64 progressConditionLength;
+        wchar_t progressCondition[progressConditionLength];
+        int64 rewardConditionLength;
+        wchar_t rewardCondition[rewardConditionLength];
+        int32 completeConditionType;
+        int32 conditionParam1;
+        int32 conditionParam2;
+        int32 resetType;
+        int32 resetValue;
+        int32 baseRewardCount;
+        for (b = 0; b < baseRewardCount; ++b)
+        {
+            struct
+            {
+                int32 unk;
+                int64 unk;
+                int64 unk;
+                char strSize;
+                int32 zero;
+                uint16 itemId;
+                int16 itemEnchant;
+                int64 itemCount;
+                char skip[12];
+            } baseRewardData;
+        }
+        int32 selectRewardCount;
+        for (c = 0; c < selectRewardCount; ++c)
+        {
+            struct
+            {
+                int32 unk;
+                int64 unk;
+                int64 unk;
+                char strSize;
+                int32 zero;
+                uint16 itemId;
+                int16 itemEnchant;
+                int64 itemCount;
+                char skip[12];
+            } selectRewardData;
+        }
+        int64 unk;
+        char isRewardOverlapable;
+        char isSaveRepository;
+        int64 expectedPrice;
+    } rewardData;
+}

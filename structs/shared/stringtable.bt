@@ -1,0 +1,28 @@
+//------------------------------------------------
+//   File: stringtable.bss
+//   Table: 
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 count;
+for (a = 0; a < count; ++a)
+{
+    struct 
+    {
+        uint32 hash;
+        int64 sheetNameLenght;
+        wchar_t sheetName[sheetNameLenght];
+        int32 symbolsCount;
+        for (b = 0; b < symbolsCount; ++b)
+        {
+            struct
+            {
+                uint32 hash;
+                int64 stringFormatKeyLength;
+                wchar_t stringFormatKey[stringFormatKeyLength];
+                int64 stringFormatLength;
+                wchar_t stringFormat[stringFormatLength];
+            } symbolData;
+        }
+    } stringTableData;
+}

@@ -1,0 +1,26 @@
+//------------------------------------------------
+//   File: alchemystatus.bss
+//   Table: Alchemy_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int32 keyItem;
+        int32 alchemyType;
+        int32 keyItem;
+        uint16 resultDropGroup;
+        int32 materialListSize;
+        for (b = 0; b < materialListSize; ++b)
+        {
+            struct
+            {
+                int32 materialItem;
+                int64 materialCount;
+            } alchemyStatusData;
+        }
+    } alchemyData;
+}

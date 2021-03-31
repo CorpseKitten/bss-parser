@@ -1,0 +1,21 @@
+//------------------------------------------------
+//   File: experiencedata.bss
+//   Table: FirstExperience
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int64 onceConditionLength;
+        wchar_t onceCondition[onceConditionLength];
+        int64 constConditionLength;
+        wchar_t constCondition[constConditionLength];
+        int64 executeLength;
+        wchar_t execute[executeLength];
+        char repeat;
+        int64 deleteConditionLength;
+        wchar_t deleteCondition[deleteConditionLength];
+    } classExperienceData;
+}

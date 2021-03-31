@@ -1,0 +1,25 @@
+//------------------------------------------------
+//      File: workertrademainnode.bss
+//     Table: TradeMainNode_Table
+//------------------------------------------------
+struct NodeData
+{
+    int32 TradeItemKey;
+    int32 TradeItemKey;
+    int64 BuyPriceFromSystem;
+    int64 SellPriceToSystem;
+};
+
+struct BodyData
+{
+    int32 Waypoint;
+    int32 Waypoint;
+    int32 count;
+    NodeData data[count] <optimize=false>;
+};
+
+struct 
+{
+    int32 count;
+    BodyData data[count] <optimize=false>;
+} Data;

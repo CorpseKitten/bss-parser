@@ -1,0 +1,49 @@
+//------------------------------------------------
+//      File: itemtrade.bss
+//     Table: TradeItem_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+
+struct
+{
+    int32 sub_group_key_count;
+    for (a = 0; a < sub_group_key_count; ++a)
+        uint16 sub_group_key;
+} Header;
+
+struct
+{
+    int32 count2;
+    for (a = 0; a < count2; ++a)
+    {
+        struct
+        {
+            byte TradeItemKey;
+            int32 TradeItemCount;
+            for (b = 0; b < TradeItemCount; ++b)
+            {
+                struct
+                {
+                    byte StandardPrice;
+                    byte Weight;
+                    float unk;
+                    int32 get_exp_rate;
+                } Unk;
+            }
+        } item_trade_middle;
+    }
+} Body;
+
+struct
+{
+    int count3;
+    for (a = 0; a < count3; ++a)
+    {
+        struct
+        {
+            int64 max_count;
+            int32 min_count;
+        } item_trade_footer;
+    }
+} Footer;

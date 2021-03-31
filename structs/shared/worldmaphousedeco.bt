@@ -1,0 +1,17 @@
+//------------------------------------------------
+//   File: worldmaphousedeco.bss
+//   Table: WorlmapHouse_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 characterKey;
+        int16 characterKey;
+        int64 worldMapObjectFileLength;
+        char worldMapObjectFile[worldMapObjectFileLength];
+        int32 objectChangeLevel;
+    } worldMapHouseDecoData;
+}

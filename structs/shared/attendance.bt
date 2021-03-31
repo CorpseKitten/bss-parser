@@ -1,0 +1,48 @@
+//------------------------------------------------
+//   File: attendance.bss
+//   Table: Attendance_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 key;
+        int64 titleLenght;
+        wchar_t title[titleLenght];
+        int64 unk;
+        int64 startDateUTC;
+        int64 startDateLength;
+        wchar_t startDate[startDateLength];
+        int64 attendanceEndDateUTC;
+        int64 attendanceEndDateLength;
+        wchar_t attendanceEndDate[attendanceEndDateLength];
+        int64 rewardEndDateUTC;
+        int64 rewardEndDateLength;
+        wchar_t rewardEndDate[rewardEndDateLength];
+        int64 eventPeriodLength;
+        wchar_t eventPeriod[eventPeriodLength];
+        int64 eventExpireLength;
+        wchar_t eventExpire[eventExpireLength];
+        int64 acceptConditionLength;
+        wchar_t acceptCondition[acceptConditionLength];
+        char userConnectionType;
+        int32 eventDaysCount;
+        for (b = 0; b < eventDaysCount; ++b)
+        {
+            struct
+            {
+                int32 rewardDay;
+                int32 rewardId;
+                int64 rewardCount;
+            } eventRewardData;
+        }
+        int32 overlapCount;
+        int64 overlapWaitingTime;
+        int32 unk;
+        int16 unk;
+        char unk;
+    } eventData;
+}

@@ -1,0 +1,86 @@
+//------------------------------------------------
+//   File: experience.bss
+//   Table: PC_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+local int32 c;
+for (a = 0; a < 32; ++a) // classCount
+{
+    struct
+    {
+        int32 levelCount;
+        for (b = 0; b < levelCount; ++b)
+        {
+            struct
+            {
+              char isValid; // always valid if not level 0
+                char class;
+                char paEatShit;
+                int16 zeros;
+                int32 level;
+                int64 requireEXP;
+                int64 requireExpLimit;
+                int64 contentRequireExpLimit;
+                float HP;
+                int32 MP;
+                int16 unk;
+                int32 unk;
+                char v485[16];
+                float hpRegen;
+                int32 mpRegen;
+                int32 variedCriticalRate;
+                int32 variedAttackSpeedRate;
+                int32 variedMoveSpeedRate;
+                int32 variedCastSpeedRate;
+                int32 maxAttackSpeed;
+                int32 maxMoveSpeed;
+                int32 maxCastSpeed;
+                int64 possessableWeight;
+                float productionHit;
+                int32 unk;
+                char unk1[12];
+                char unk2[12];
+                int32 maxFishingLuck;
+                int32 maxCollectionLuck;
+                int32 maxDropItemLuck;
+              //int32 offensiveStatsCount;
+                struct
+                {
+                    for (c = 0; c < 3; ++c)
+                    {
+                        struct
+                        {
+                            int64 damageLength;
+                            wchar_t DD[damageLength]; // 3 damageTypes; DDD, RDD, MDD
+                            float HIT; // 3 accuracyTypes; DHIT, RHIT, MHIT
+                        } offensiveStats;
+                    }
+                } offensiveStatsData;
+              //int32 defensiveStatsCount;
+                struct
+                {
+                    for (c = 0; c < 3; ++c)
+                    {
+                        struct
+                        {
+                            float DV;
+                            float HDV;
+                            float PV;
+                            float HPV;
+                        } defensiveStats;
+                    }
+                    int32 unkRate;
+                } defensiveStatsData;
+                int64 variedMaxHpLength;
+                wchar_t variedMaxHP[variedMaxHpLength];
+                int64 variedMaxMpLength;
+                wchar_t variedMaxMP[variedMaxMpLength];
+              char skip1[0x30]; // variedDirect: HIT,DV,PV stat strings
+              char skip2[0x30]; // variedRange: HIT,DV,PV stat strings
+              char skip3[0x30]; // variedMagical: HIT,DV,PV stat strings
+                //char alwaysZeroes[72];
+            } levelExperienceData;
+        }
+    } classExperienceData;
+}

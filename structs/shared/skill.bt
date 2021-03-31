@@ -1,0 +1,85 @@
+//------------------------------------------------
+//   File: skill.bss
+//   Table: Skill_Table_New
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 size;
+for (a = 0; a < size; ++a)
+{
+    struct
+    {
+        uint16 skillLevel;
+        uint16 skillNo;
+        uint16 skillLevel;
+        uint16 skillNo;
+        byte isPromptForLearning;
+        int64 actionNameLength;
+        char actionName[actionNameLength];
+        uint32  actionHash;
+        byte   unk;
+        uint16 skillpointForLearning;
+        int32  pcLevelForLearning;
+        int64  needMoneyForLearning;
+        int32  needItemIdForLearning;
+        int64  needItemCountForLearning;
+        uint16  needSkillLevelNo0ForLearning;
+        uint16  needSkillNo0ForLearning;
+        uint16  needSkillLevelNo1ForLearning;
+        uint16  needSkillNo1ForLearning;
+        byte   unk;
+        int32  requireHP;
+        int32  requireMP;
+        int32  requireResourcePoint;
+        int32  requireSP;
+        int32  needItemId;
+        int64  needItemCount;
+        byte   unk;
+        int32  unk;
+        int16  reuseGroup;
+        int32  reuseCycle;
+        byte   doCheckHit;
+        float  variedHit;
+        struct
+        {
+            int32 offensiveStatsTypeCount;
+            for (b = 0; b < offensiveStatsTypeCount; ++b)
+            {
+                struct
+                {
+                    int64 statTypeLength; // Melee, Ranged, Magic
+                    wchar_t DRM_DD[statTypeLength]; // DDD,RDD,MDD
+                    float DRM_HIT; // DHIT, RHIT, MHIT
+                } offensiveStatData;
+            }
+            int32 defensiveStatsTypeCount;
+            for (b = 0; b < defensiveStatsTypeCount; ++b)
+            {
+                struct
+                {
+                    float DRM_DV; // DDV,RDV,MDV
+                    float H_DRM_DV; //HDDV,HRDV,HMDV
+                    float DRM_PV; // DPV,RPV,MPV
+                    float H_DRM_PV; // HDPV,HRPV,HMPV
+                } defensiveStatData;
+            }
+            int32 unk;
+        } statsData;
+        byte unk;
+        int16 applyNumber;
+        int32 buffApllyRate;
+        struct
+        {
+            for (b = 0; b < 10; ++b)
+                uint16 buff; // buff index 0~9
+        } buffData;
+        int64 descLength;
+        wchar_t desc[descLength];
+        short FFFF;
+        int16 unk;
+        byte usableInCooltime;
+        byte unk;
+        byte isExpiredInOffline;
+        uint16 unk;
+    } skillData;
+}

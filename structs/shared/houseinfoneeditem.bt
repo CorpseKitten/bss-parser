@@ -1,0 +1,31 @@
+//------------------------------------------------
+//     File: houseinfoneeditem.bss
+//     Table: House_Transfer_New
+//------------------------------------------------
+typedef struct ItemEntry
+{
+	uint32 ItemKey;
+	uint64 ItemCount;
+};
+
+typedef struct HouseInfoBody
+{
+	uint32      Level;
+	uint32      Time;
+	uint32 		ItemCount;
+	ItemEntry	ItemList[ItemCount] <optimize=false>;
+};
+
+typedef struct BodyData
+{
+	uint16 			TransferKey;
+	HouseInfoBody 	HouseInfoList[6] <optimize=false>;
+};
+
+struct Data
+{
+	uint32 	 count;
+	BodyData bodyData[count] <optimize=false>;
+};
+
+Data data;

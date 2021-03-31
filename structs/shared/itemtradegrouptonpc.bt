@@ -1,0 +1,50 @@
+//------------------------------------------------
+//      File: itemtradegrouptonpc.bss
+//   Authors: ??
+//------------------------------------------------
+
+struct TradeData
+{
+    uint16		ItemSubGroupKey;
+    int32		ItemKey;
+    int64		ConditionLength;		//(__int64)(v3 + 8)
+    wchar_t		Condition[ConditionLength];	//(__int64)(v3 + 8)
+    int32		unk;			//v3 + 36
+    int32		unk;			//v3 + 38
+    int32		unk;			//v3 + 40
+    int32		unk;			//v3 + 42
+    int32		unk;			//v3 + 44
+    int32		unk;			//v3 + 46
+    int32		unk;			//v3 + 48
+    int32		unk;			//v3 + 50
+    int64		unk;			//v3 + 52
+    byte		unk;			//v3 + 56
+    byte		unk;			//v3 + 113
+    int64		unk;			//v3 + 60
+    int64		unk;			//v3 + 64
+    int64		unk;			//v3 + 68
+    int32		unk;			//v3 + 72
+    byte		unk;			//v3 + 74
+    int16		unk;			//v3 + 75
+    int32		unk;			//v3 + 76
+    int64		unk;			//v3 + 80
+    int64		unk;			//v3 + 84
+    int16		unk;			//v3 + 88
+    int16		unk;			//v3 + 89
+    int32		unk;			//v3 + 90
+    int32		unk;			//v3 + 92
+    byte		unk;			//v3 + 94
+};
+
+struct BodyData
+{
+    uint16 ItemSubGroupKey;
+    int32  TradeDataCount;
+    TradeData Data[TradeDataCount] <optimize=false>;
+};
+
+struct
+{
+    int32 count;
+    BodyData data[count] <optimize=false>;
+} Data;

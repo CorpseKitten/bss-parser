@@ -1,0 +1,160 @@
+local int32 i;
+local int32 y;
+typedef struct FloatData
+{
+    char      unkarr2[140];
+};
+
+typedef struct BodyData
+{
+    uint16    index;
+    byte      ObjectKind;
+    byte      Unk1;
+    byte      Unk2;
+    uint64    objectMeshSize;
+    char      ObjectMesh[objectMeshSize];
+    uint64    houseHoldMeshSize;
+    char      HouseHoldMesh[houseHoldMeshSize];
+    uint64    houseHoldMeshFileNameSize;
+    char      HouseHoldMeshFileName[houseHoldMeshFileNameSize];
+    byte      IsCollision;
+    uint32    Param1;
+    uint32    blockSize;
+   
+    for (i = 0; i < blockSize; i++)
+    {
+        struct {
+            uint32  floatBlockSize1;
+            for (y = 0; y < floatBlockSize1; y++)
+            {
+                struct {
+                     uint32    pamDataSize;
+                     FloatData floatData[pamDataSize] <optimize=false>;
+                   
+                } hren2;
+            }
+           
+        } hren1;
+    }
+    uint32    unkFlag;
+    uint32    InstallCarpenter;
+    uint32    InstallAlchemy;
+    uint32    InstallArmor;
+    uint32    InstallCooking;
+    uint32    InstallForging;
+    uint32    InstallPurifyng;
+    uint32    InstallSmithing;
+    uint32    InstallWeaving;
+    uint32    InstallFurniture;
+    uint32    InstallHarvest;
+    uint32    InstallMortar;
+    uint32    InstallAnvil;
+    uint32    InstallStump;
+    uint32    InstallFierBowl;
+    uint32    InstallVendingMachine;
+    uint32    InstallConsignmentSale;
+    uint32    InstallBuff;
+    uint32    InstallRoomServiceTable;
+    uint32    InstallBookcase;
+    uint32    InstallWarehouseBox;
+    uint32    InstallAlchemy2;
+    uint32    InstallJukebox;
+    uint32    InstallPetHouse;
+    uint32    InstallWallPaper;
+    uint32    InstallFloorMaterial;
+    uint32    InstallChandelier;
+    uint32    InstallCurtain;
+    char      unkarr[36];
+    uint32    KeyItemIndex;
+    uint32    InstallationMaxCount;
+    char      unkarr00[5];
+    byte      SiegeObjectTypeBaricade;
+    char      unkarr01[6];
+    byte      SiegeObjectTypeHealing;
+    byte      SiegeObjectTypeCannon;
+    byte      SiegeObjectTypeElephant;
+    byte      SiegeObjectTypeRepair;
+    byte      SiegeObjectTypeMine;
+    byte      SiegeObjectTypeBomb;
+    byte      SiegeObjectTypeTank;
+    byte      SiegeObjectTypeCatapult;
+    byte      SiegeObjectTypeFlame;
+    byte      SiegeObjectTypeSupplyBase;
+    byte      SiegeObjectTypeBaricadeDoor;
+    byte      SiegeObjectTypeWonderFenceBase;
+    byte      SiegeObjectTypeDefenceTower;
+    byte      SiegeObjectTypeSiegeTower;
+    byte      SiegeObjectTypeLargeSiegeTower;
+    byte      SiegeObjectTypeAdvancedBase;
+    byte      SiegeObjectTypeAdvancedBaseTower;
+    char      unkarr02[4];
+    byte      BaricadeUpgradeLevel;
+    char      unkarr03[6];
+    byte      HealingUpgradeLevel;
+    byte      CannonUpgradeLevel;
+    byte      ElephantUpgradeLevel;
+    byte      RepairUpgradeLevel;
+    byte      MineUpgradeLevel;
+    byte      BombUpgradeLevel;
+    byte      TankUpgradeLevel;
+    byte      CatapultpUgradeLevel;
+    byte      FlameUpgradeLevel;
+    byte      SupplyBaseUpgradeLevel;
+    byte      BaricadeDoorUpgradeLevel;
+    byte      WonderFenceBaseUpgradeLevel;
+    byte      DefenceTowerUpgradeLevel;
+    byte      SiegeTowerUpgradeLevel;
+    byte      LargeSiegeTowerUpgradeLevel;
+    byte      AdvancedBaseUpgradeLevel;
+    byte      AdvancedBaseTowerUpgradeLevel;
+    char      unkarr05[1];
+    byte      InstallationType;
+    byte      SubInstallationType;
+    byte      ReferenceActionObjectType;
+    byte      IsInside;
+    byte      IsOutside;
+    byte      IsFloor;
+    byte      IsWall;
+    byte      IsOnTheTable;
+    byte      IsCarpet;
+    char      unkarr3[3];
+    float     EffectRadius;
+    byte      EffectType;
+    uint32    unkInt;
+    uint32    RentalFee;
+    char      unkarr31[8];
+    uint16    ProductRecipe;
+    uint16    SeedRecipe;
+    uint64    ExploreExp;
+    uint64    houseIconPathSize;
+    wchar_t   HouseIconPath[houseIconPathSize];
+    uint64    houseScreenShotPath1Size;
+    wchar_t   HouseScreenShotPath1[houseScreenShotPath1Size];
+    uint64    houseScreenShotPath2Size;
+    wchar_t   HouseScreenShotPath2[houseScreenShotPath2Size];
+    char      unkarr1[18];
+    uint64    UsingTime;
+    uint32    InterriorPoint;
+    uint64    descAreaSize;
+    wchar_t   DescArea[descAreaSize];
+    uint64    descFeature1Size;
+    wchar_t   DescFeature1[descFeature1Size];
+    uint64    descFeature2Size;
+    wchar_t   DescFeature2[descFeature2Size];
+    char      unkarr2[133];
+    byte      ArmorMaterial;
+    uint16    SummonCharacterKey;
+    uint16    MaterialIndex;
+    char      unkarr21[12];
+    uint64    usingActionSize;
+    char      UsingAction[usingActionSize];
+    char      unkarr4[4];
+};
+
+struct Data
+{
+   uint32             count;
+   BodyData           bodyData[count] <optimize=false>;
+};
+
+Data data;

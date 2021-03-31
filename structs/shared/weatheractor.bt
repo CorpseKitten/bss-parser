@@ -1,0 +1,30 @@
+//------------------------------------------------
+//   File: weatheractor.bss
+//   Table: WeatherActor_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 characterkey;
+        byte unk; // 1
+        int16 characterkey; 
+        int32 type;
+        float radius;
+        float rainAmount;
+        float cloudRate;
+        float damageMax;
+        float damageRadius;
+        float damageRadiusrate;
+        float pushPullSpeed;
+        int16 skillLevel;
+        uint16 skillNo;
+        uint16 skillApplyrate;
+        int32 waveScale;
+        int16 unk;
+        int16 waterColorTable;
+        int32 time;
+    } weatherActorData;
+}

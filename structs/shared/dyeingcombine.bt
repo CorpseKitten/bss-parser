@@ -1,0 +1,21 @@
+//------------------------------------------------
+//   File: dyeingcombine.bss
+//   Table: DyeingCombine_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uchar colorR;
+        uchar colorG;
+        uchar colorB;
+        uchar colorA;
+        uchar colorR;
+        uchar colorG;
+        uchar colorB;
+        uchar colorA;
+        int32 itemKey;
+    } dyeCombineData;
+}

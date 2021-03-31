@@ -1,0 +1,23 @@
+//------------------------------------------------
+//   File: supportpointexperience.bss
+//   Table: SupportPointEXP_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uint16 map_key;
+        uint16 territoryKey;
+        int64 territoryNameLength;
+        wchar_t territoryName[territoryNameLength];
+        for (b = 0; b < 10; ++b)
+        {
+            uint16 supportPoint;
+            uint64 requireExp;
+            uint32 bonusKey;
+        }
+    } supportPointExperienceData;
+}

@@ -1,0 +1,16 @@
+//------------------------------------------------
+//   File: collectresourcename.bss
+//   Table: CollectResourceName_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct{
+        uint32 unk;
+        uint32 unk;
+        int64 ressourceFileNameLength;
+        char ressourceFileName[ressourceFileNameLength];
+        int16 characterObjectIndex;
+    } collectResourceData;
+}

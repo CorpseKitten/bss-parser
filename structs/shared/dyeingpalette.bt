@@ -1,0 +1,27 @@
+//------------------------------------------------
+//   File: dyeingpalette.bss
+//   Table: DyeingPalette_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 typeCount;
+for (a = 0; a < typeCount; ++a)
+{
+    struct
+    {
+        int16 type;
+        int64 typeNumberCount;
+        for (b = 0; b < typeNumberCount; ++b)
+        {
+            struct
+            {
+                uchar colorB;
+                uchar colorG;
+                uchar colorR;
+                uchar colorA;
+                float env;
+                float specular;
+            } dyeTypeData;
+        }
+    } dyePaletteData;
+}

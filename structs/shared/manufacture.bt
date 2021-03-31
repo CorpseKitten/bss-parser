@@ -1,0 +1,32 @@
+//------------------------------------------------
+//      File: manufacture.bss
+//     Table: Manufacture_Table
+//------------------------------------------------
+typedef struct Material
+{
+    int32 MaterialItem;
+    int64 MaterialItemCount;
+};
+
+typedef struct BodyData
+{
+    int32		MaterialItem
+    int64		CheckTime;
+    int64		ActionNameLength;
+    char		ActionName[ActionNameLength];
+    int32		SuccessPercent;	
+    uint16	    unk;
+    uint16	    unk;
+    byte		UsingInstallationType;
+    int16		ResultDropGroup;
+    int32       MaterialCount;
+    Material    MaterialList[MaterialCount] <optimize=false>;    
+};
+
+struct Data
+{
+    int32       count;
+    BodyData    bodyData[count] <optimize=false>;
+};
+
+Data data;

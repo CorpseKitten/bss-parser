@@ -1,0 +1,24 @@
+//------------------------------------------------
+//   File: displayexchangeitemnpc.bss
+//   Table: DisplayExchangeItemNpc
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct{
+        uint16 npc;
+        uint16 dialogIndex;
+        int32 itemExchangeListCount;
+        for (b = 0; b < itemExchangeListCount; ++b)
+        {
+            struct
+            {
+                uint16 setItemExchange;
+            } itemData;
+        }
+        uint16 npc;
+        uint16 dialogIndex;
+    } itemExchangeData;
+}

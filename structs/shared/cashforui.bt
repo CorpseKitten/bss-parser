@@ -1,0 +1,16 @@
+//------------------------------------------------
+//   File: cashforui.bss
+//   Table: 
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 unk;
+        char unk;
+        int64 unk;
+        int16 unk;
+    } cashUIData;
+}

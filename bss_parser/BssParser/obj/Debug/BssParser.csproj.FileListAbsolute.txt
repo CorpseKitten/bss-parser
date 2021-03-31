@@ -1,0 +1,14 @@
+C:\Users\Bob\Desktop\BDO\Files\BdoTools\bss\bss_parser\BssParser\bin\Debug\BssParser.exe.config
+C:\Users\Bob\Desktop\BDO\Files\BdoTools\bss\bss_parser\BssParser\bin\Debug\BssParser.exe
+C:\Users\Bob\Desktop\BDO\Files\BdoTools\bss\bss_parser\BssParser\bin\Debug\BssParser.pdb
+C:\Users\Bob\Desktop\BDO\Files\BdoTools\bss\bss_parser\BssParser\obj\Debug\BssParser.csprojResolveAssemblyReference.cache
+C:\Users\Bob\Desktop\BDO\Files\BdoTools\bss\bss_parser\BssParser\obj\Debug\BssParser.csproj.CoreCompileInputs.cache
+C:\Users\Bob\Desktop\BDO\Files\BdoTools\bss\bss_parser\BssParser\obj\Debug\BssParser.exe
+C:\Users\Bob\Desktop\BDO\Files\BdoTools\bss\bss_parser\BssParser\obj\Debug\BssParser.pdb
+C:\Users\root\Desktop\Awakened Desert Online Source\Tools\bss\bss_parser\BssParser\bin\Debug\BssParser.exe.config
+C:\Users\root\Desktop\Awakened Desert Online Source\Tools\bss\bss_parser\BssParser\bin\Debug\BssParser.exe
+C:\Users\root\Desktop\Awakened Desert Online Source\Tools\bss\bss_parser\BssParser\bin\Debug\BssParser.pdb
+C:\Users\root\Desktop\Awakened Desert Online Source\Tools\bss\bss_parser\BssParser\obj\Debug\BssParser.csprojAssemblyReference.cache
+C:\Users\root\Desktop\Awakened Desert Online Source\Tools\bss\bss_parser\BssParser\obj\Debug\BssParser.csproj.CoreCompileInputs.cache
+C:\Users\root\Desktop\Awakened Desert Online Source\Tools\bss\bss_parser\BssParser\obj\Debug\BssParser.exe
+C:\Users\root\Desktop\Awakened Desert Online Source\Tools\bss\bss_parser\BssParser\obj\Debug\BssParser.pdb

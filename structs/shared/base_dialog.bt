@@ -1,0 +1,26 @@
+//------------------------------------------------
+//   File: base_dialog.bss
+//   Table: Dialog_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uint16 npc;
+        uint16 dialogIndex;
+        int64 nameLength;
+        wchar_t name[nameLength];
+        int32 bubbleCount;
+        for (b = 0; b < bubbleCount; ++b)
+        {
+            struct
+            {
+                int64 bubbleLength;
+                wchar_t bubble[bubbleLength];
+            } bubbleData;
+        }
+    } dialogData;
+}

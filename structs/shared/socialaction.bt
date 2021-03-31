@@ -1,0 +1,39 @@
+//------------------------------------------------
+//   File: socialaction.bss
+//   Table: SocialAction_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 count;
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        int16 index_key;
+        int16 index;
+        int64 socialActionNameLength;
+        wchar_t socialActionName[socialActionNameLength];
+        int64 useConditionLength;
+        wchar_t useCondition[useConditionLength];
+        int64 chattingCommandLength;
+        wchar_t chattingCommand[chattingCommandLength];
+        int32 unk;
+        int64 chattingKeyworldLength;
+        wchar_t chattingKeyword[chattingKeyworldLength];
+        int64 actionNameLength;
+        char actionName[actionNameLength];
+        uint32 unk; // action hash?
+        int64 iconImageLength;
+        wchar_t iconImage[iconImageLength];
+        int64 conditionMessageLength;
+        wchar_t conditionMessage[conditionMessageLength];
+        int32 contentGroupKeyCount;
+        struct
+        {       
+            for (b = 0; b < contentGroupKeyCount; ++b)
+            {
+                int32 packedContentGroupKey;
+            }
+        } contentGroupKeyData;
+    } socialActionData;
+}

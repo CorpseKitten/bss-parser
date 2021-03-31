@@ -1,0 +1,19 @@
+//------------------------------------------------
+//   File: vehicletraining.bss
+//   Table: VehicleTrainingSkill_Item_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int32 itemKey;
+        int32 itemKey;
+        byte skillKey;
+        int32 experience;
+        int64 descLength;
+        wchar_t desc[descLength];
+    } vehicleTrainingData;
+}

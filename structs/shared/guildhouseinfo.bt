@@ -1,0 +1,27 @@
+//------------------------------------------------
+//      File: guildhouseinfo.bss
+//     Table: GuildHouseInfo
+//------------------------------------------------
+typedef struct CraftItem
+{
+	uint32 ItemId;
+	uint32 ItemCount;
+};
+
+typedef struct BodyData
+{
+	uint16 		AffiliatedTown;
+	uint32 		ParentNode;
+	uint32 		CraftItemListCount;
+	CraftItem	CraftItemList[CraftItemListCount] <optimize=false>;
+    uint16      CharacterKey;
+    uint16      Unk;
+};
+
+struct Data
+{
+	uint32 		count;
+	BodyData 	bodyData[count] <optimize=false>;
+};
+
+Data data;

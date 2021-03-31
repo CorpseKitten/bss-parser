@@ -1,0 +1,669 @@
+//------------------------------------------------
+//      File: gameoption.bss
+//     Table: GameOptions 
+//------------------------------------------------
+
+struct UnkData
+{
+    byte unk;
+    int32 unk;
+};
+
+struct UnkData2
+{
+    int32 unk;
+    int32 unk;
+};
+
+struct
+{
+    int32		unk;			//v1 + 40
+    int32		unk;			//v1 + 44
+    int32		unk;			//v1 + 48
+    int32		unk;			//v1 + 52
+    int32		unk;			//v1 + 56
+    int64		unk;			//v1 + 64
+    int64		unk;			//v1 + 72
+    int16		unk;			//v1 + 80
+    int64       unkCount;
+    int32       unkData[unkCount] <optimize=false>;
+    byte		unk;			//v1 + 20
+    int32		unk;			//v1 + 4
+    int32		unk;			//v1 + 8
+    float		unk;			//v1 + 12
+    int32		unk;			//v1 + 16
+    int32		unk;			//v1 + 23504
+    byte		unk;			//v1 + 21
+    byte		unk;			//v1 + 22
+    int32		unk;			//v1 + 112
+    int32		unk;			//v1 + 116
+    byte		unk;			//v1 + 172
+    int64		unk;			//v1 + 128
+    int64		unk;			//v1 + 136
+    int64		unk;			//v1 + 144
+    int32		unk;			//v1 + 152
+    int64		unk;			//v1 + 160
+    int32		unk;			//v1 + 168
+    byte		unk;			//v1 + 173
+    byte		unk;			//v1 + 174
+    byte		unk;			//v1 + 175
+    int16		unk;			//v1 + 320
+    int64		unk;			//v1 + 328
+    int64		unkStrLen0;		//v1 + 336
+    wchar_t		unkStr0[unkStrLen0];	//v1 + 336
+    int64		unk;			//v1 + 392
+    int64		unk;			//v1 + 7952
+    int32		unk;			//v1 + 7960
+    byte		unk;			//v1 + 7984
+    int32		unk;			//v1 + 480
+    int32		unk;			//v1 + 484
+    int32		unk;			//v1 + 488
+    int32		unk;			//v1 + 492
+    int32		unk;			//v1 + 496
+    int32		unk;			//v1 + 500
+    int32		unk;			//v1 + 14936
+    float		unk0[500];			//v1 + 15504
+    float		unk1[500];			//v1 + 17504
+    float		unk2[500];			//v1 + 19504
+    float		unk3[500];			//v1 + 21504
+    int64		unk;			//v1 + 544
+    int64		unk;			//v1 + 552
+    int32		unk;			//v1 + 568
+    int32		unk;			//v1 + 572
+    int32		unk;			//v1 + 576
+    int32		unk;			//v1 + 580
+    int32		unk;			//v1 + 584
+    int32		unk;			//v1 + 588
+    int32		unk;			//v1 + 592
+    int32		unk;			//v1 + 596
+    int64		unk;			//v1 + 560
+    int64		unk;			//v1 + 608
+    int64		unk;			//v1 + 616
+    int32		unk;			//v1 + 624
+    int64		unk;			//v1 + 632
+    int64		unk;			//v1 + 640
+    int16		unk;			//v1 + 648
+    int32		unk;			//v1 + 752
+    int32		unk;			//v1 + 756
+    int64		unk;			//v1 + 808
+    int64		unk;			//v1 + 816
+    int64		unk;			//v1 + 856
+    int64		unk;			//v1 + 864
+    int64		unk;			//v1 + 824
+    float		unk;			//v1 + 832
+    int32		unk;			//v1 + 836
+    int32		unk;			//v1 + 840
+    float		unk;			//v1 + 760
+    float		unk;			//v1 + 764
+    int64		unk;			//v1 + 768
+    int32		unk;			//v1 + 792
+    int32		unk;			//v1 + 796
+    int32		unk;			//v1 + 800
+    int32		unk;			//v1 + 776
+    int32		unk;			//v1 + 780
+    int32		unk;			//v1 + 784
+    int32		unk;			//v1 + 788
+    int32		unk;			//v1 + 14960
+    int64		unk;			//v1 + 14968
+    int32		unk;			//v1 + 14976
+    int64		unk;			//v1 + 14992
+    int64		unk;			//v1 + 15000
+    int32		unk;			//v1 + 844
+    int32		unk;			//v1 + 15032
+    int64		unk;			//v1 + 23952
+    float		unk;			//v1 + 23960
+    int32		unk;			//v1 + 14980
+    int32		unk;			//v1 + 14984
+    int32		unk;			//v1 + 14988
+    int32		unk;			//v1 + 15040
+    int32		unk;			//v1 + 15036
+    int32		unk;			//v1 + 15044
+    int32		unk;			//v1 + 15048
+    int32		unk;			//v1 + 15052
+    int64		unk;			//v1 + 15064
+    int32		unk;			//v1 + 15072
+    int64		unk;			//v1 + 15088
+    int32		unk;			//v1 + 15096
+    int64       unkCount2;
+    int64        unkData2[unkCount2] <optimize=false>;
+    int64		unk;			//v1 + 24616
+    float		unk;			//v1 + 180
+    float		unk;			//v1 + 184
+    int32		unk;			//v1 + 600
+    int32		unk;			//v1 + 188
+    float		unk;			//v1 + 192
+    float		unk;			//v1 + 196
+    float		unk;			//v1 + 200
+    int64		unk;			//v1 + 208
+    int32		unk;			//v1 + 216
+    float		unk;			//v1 + 220
+    float		unk;			//v1 + 224
+    int64		unk;			//v1 + 232
+    int64		unk;			//v1 + 240
+    float		unk;			//v1 + 248
+    float		unk;			//v1 + 252
+    int32		unk;			//v1 + 256
+    int64		unk;			//v1 + 264
+    byte		unk;			//v1 + 272
+    int64		unk;			//v1 + 280
+    byte		unk;			//v1 + 288
+    int32		unk;			//v1 + 292
+    float		unk;			//v1 + 296
+    int32		unk;			//v1 + 7964
+    int64		unk;			//v1 + 312
+    int64		unk;			//v1 + 400
+    int64		unkStrLen1;		//v1 + 424
+    wchar_t		unkStr1[unkStrLen1];	//v1 + 424
+    int32		unk;			//v1 + 24
+    int32		unk;			//v1 + 28
+    int32		unk;			//v1 + 32
+    int32		unk;			//v1 + 36
+    float		unk;			//v1 + 652
+    int32		unk;			//v1 + 656
+    int32		unk;			//v1 + 660
+    int32		unk;			//v1 + 664
+    int32		unk;			//v1 + 668
+    int64		unk;			//v1 + 672
+    int64		unk;			//v1 + 680
+    int64		unk;			//v1 + 688
+    int64		unk;			//v1 + 696
+    int32		unk;			//v1 + 712
+    int64		unk;			//v1 + 704
+    int64		unk;			//v1 + 720
+    int32		unk;			//v1 + 728
+    int32       unkCount3;
+    uint16       unkData3[unkCount3] <optimize=false>;
+    int32		unk;			//v1 + 7968
+    int64		unk;			//v1 + 7976
+    int32		unk;			//v1 + 7988
+    int32		unk;			//v1 + 7992
+    int64		unk;			//v1 + 408
+    byte		unk;			//v1 + 419
+    byte		unk;			//v1 + 418
+    int16		unk;			//v1 + 416
+    float		unk;			//v1 + 7996
+    float		unk;			//v1 + 8988
+    float		unk;			//v1 + 8992
+    int16		unk;			//v1 + 8002
+    float		unk;			//v1 + 8004
+    int32		unk;			//v1 + 8008
+    int32		unk;			//v1 + 8012
+    int32		unk;			//v1 + 8016
+    int16		unk;			//v1 + 8020
+    int32		unk;			//v1 + 8984
+    int32		unk;			//v1 + 8996
+    int32		unk;			//v1 + 8024
+    int32		unk;			//v1 + 8028
+    int32		unk;			//v1 + 8032
+    int64		unk;			//v1 + 8080
+    int32		unk;			//v1 + 8088
+    int32		unk;			//v1 + 8092
+    int32		unk;			//v1 + 8040
+    int32		unk;			//v1 + 23728
+    int16		unk;			//v1 + 8044
+    int16		unk;			//v1 + 8050
+    int32		unk;			//v1 + 8052
+    int16		unk;			//v1 + 8056
+    int32		unk;			//v1 + 8060
+    int32		unk;			//v1 + 8064
+    int16		unk;			//v1 + 8068
+    int32		unk;			//v1 + 8072
+    int32		unk;			//v1 + 8076
+    int16		unk;			//v1 + 8070
+    int16		unk;			//v1 + 8046
+    int16		unk;			//v1 + 8048
+    int32		unk;			//v1 + 504
+    float		unk;			//v1 + 508
+    int32		unk;			//v1 + 512
+    int32		unk;			//v1 + 516
+    int32		unk;			//v1 + 520
+    int32		unk;			//v1 + 524
+    int32		unk;			//v1 + 528
+    int32		unk;			//v1 + 532
+    int32		unk;			//v1 + 536
+    int32		unk;			//v1 + 14848
+    int16		unk;			//v1 + 14854
+    int32		unk;			//v1 + 14856
+    int16		unk;			//v1 + 14852
+    int32		unk4[8];			//v1 + 5072
+    uint16		unk;			//v1 + 15304
+    uint16		unk;			//v1 + 15304
+    int32		unk;			//v1 + 15328
+    int32		unk;			//v1 + 15332
+    int32		unk;			//v1 + 15344
+    int32		unk;			//v1 + 15360
+    int32		unk;			//v1 + 15376
+    int32		unk;			//v1 + 15380
+    int32		unk;			//v1 + 15384
+    int32		unk;			//v1 + 15388
+    byte		unk;			//v1 + 15392
+    int32		unk;			//v1 + 15396
+    int64       unkCount4;
+    int32        unkData4[unkCount4];
+    int32       unk;
+    int64       unkCount5;
+    int16        unkData5[unkCount5];
+    int32       unkCount6;
+    int16       unkData6[unkCount6];
+    int64       unkCount7;
+    int32        unkData7[unkCount7];
+    int64		unk;			//v1 + 24072
+    int64		unk;			//v1 + 24080
+    int32		unk;			//v1 + 24088
+    int32		unk;			//v1 + 24092
+    int32		unk;			//v1 + 24096
+    int32		unk;			//v1 + 176
+    int32		unk;			//v1 + 24040
+    int32		unk;			//v1 + 24044
+    int32		unk;			//v1 + 24724
+    int16		unk;			//v1 + 24728
+    int64		unk;			//v1 + 24736
+    float		unk5[1024];			//v1 + 976
+    int32		unk6[0x64];			//v1 + 5128
+    int32		unk7[0x64];			//v1 + 5528
+    int32		unk8[0x64];			//v1 + 5928
+    int32		unk9[0x64];			//v1 + 6328
+    int32		unk10[0x64];			//v1 + 6728
+    int32		unk11[0x64];			//v1 + 7128
+    int32		unk12[0x64];			//v1 + 7528
+    int64       unk;
+    int64       unkCount8;
+    int32        unkData8[unkCount8];
+    int64		unk;			//v1 + 888
+    int64		unk;			//v1 + 896
+    int64		unk;			//v1 + 904
+    int64		unk;			//v1 + 912
+    int64		unk;			//v1 + 920
+    int32		unk;			//v1 + 872
+    int32		unk;			//v1 + 876
+    int32		unk;			//v1 + 880
+    int32		unk;			//v1 + 884
+    int64		unk;			//v1 + 928
+    int16		unk;			//v1 + 936
+    char		unk13[0x14];			//v1 + 9232
+    int64		unk;			//v1 + 9296
+    int32		unk14[18];			//v1 + 9096
+    int32       unkCount9;
+    UnkData     unkData9[unkCount9];
+    int32		unk;			//v1 + 9000
+    int32		unk;			//v1 + 9004
+    int32		unk;			//v1 + 9008
+    int32		unk;			//v1 + 9012
+    int64		unk;			//v1 + 9016
+    int64		unk;			//v1 + 9024
+    int64		unk;			//v1 + 9032
+    int16		unk;			//v1 + 9040
+    int64		unk;			//v1 + 9048
+    int64		unk;			//v1 + 9056
+    int64		unk;			//v1 + 9064
+    int32		unk;			//v1 + 9072
+    int32		unk;			//v1 + 9080
+    int32		unk;			//v1 + 9088
+    int32		unk;			//v1 + 9092
+    byte		unk;			//v1 + 9076
+    int32       unkCount10;
+    UnkData2    unkData10[unkCount10];
+    local int32 ab; // 9304
+    for (ab = 0; ab < 8; ++ab)
+    {
+        struct
+        {
+            int32 unkCount;
+            struct
+            {
+                int32 unk;
+                int32 unk;
+            } UnkData4 [unkCount];
+        } UnkData3;
+    }
+
+    // 9736
+    for (ab = 0; ab < 8; ++ab)
+    {
+        struct
+        {
+            int32 unkCount;
+            struct
+            {
+                int32 unk;
+                int32 unk;
+            } UnkData4 [unkCount];
+        } UnkData3;
+    }
+    
+    // 10168
+    for (ab = 0; ab < 8; ++ab)
+    {
+        struct
+        {
+            int32 unkCount;
+            struct
+            {
+                int32 unk;
+                int32 unk;
+            } UnkData4 [unkCount];
+        } UnkData3;
+    }
+
+    // 9496
+    for (ab = 0; ab < 10; ++ab)
+    {
+        struct
+        {
+            int32 unkCount;
+            struct
+            {
+                int32 unk;
+                int32 unk;
+            } UnkData4 [unkCount];
+        } UnkData3;
+    }
+
+    // 9928
+    for (ab = 0; ab < 10; ++ab)
+    {
+        struct
+        {
+            int32 unkCount;
+            struct
+            {
+                int32 unk;
+                int32 unk;
+            } UnkData4 [unkCount];
+        } UnkData3;
+    }
+
+
+    // 10360
+    for (ab = 0; ab < 10; ++ab)
+    {
+        struct
+        {
+            int32 unkCount;
+            struct
+            {
+                int32 unk;
+                int32 unk;
+            } UnkData4 [unkCount];
+        } UnkData3;
+    }
+    int32		unk;			//v1 + 10600
+    int32		unk;			//v1 + 10604
+    int32		unk;			//v1 + 10608
+    int32 unkCount11;
+    struct
+    {
+        int32 unk;
+        int32 unk;
+    } UnkData4 [unkCount11];
+    int64       unkCount12;
+    char        unkData12[unkCount12 * 12];
+
+    // 8244
+    for (ab = 0; ab < 10; ++ab)
+    {
+        struct
+        {
+            int32		unk;			//v40 - 4
+            int32		unk;			//(const void *v40
+            int32		unk;			//v40 + 4
+            int32		unk;			//v40 + 8
+            int32		unk;			//v40 + 12
+            char		unk0[0xC];			//v40 + 16
+            int64		unk;			//v40 + 28
+            int32       unk1[4];
+            int16       unk;
+        } UnkData3;
+    }
+
+    struct
+    {
+        local int32 a;
+        local int32 b;
+        for (a = 0; a < 32; ++a) // +2
+        {
+            uint32 unk;
+            uint32 unk;
+        }
+        for (a = 0; a < 32; ++a) // +64
+        {
+            uint32 unk;
+            uint32 unk;
+        }
+        for (a = 0; a < 32; ++a) // 128
+        {
+            uint32 unk;
+            uint32 unk;
+        }
+        for (a = 0; a < 32; ++a) // 192
+        {
+            uint32 unk;
+            uint32 unk;
+        }
+        for (a = 0; a < 32; ++a) // 256
+        {
+            uint32 unk;
+            uint32 unk;
+        }
+        for (a = 0; a < 32; ++a)
+        {
+            uint32 unk;
+        }
+    } sub_140CE25AC;
+    local int32 b;
+    int32 unkCount20;
+    for (b = 0; b < unkCount20; ++b) // 14880
+    {
+        struct
+        {
+            int16 unk;
+            int16 unk;
+        } unkshit;
+    }
+    int32 unkCount21;
+    for (b = 0; b < unkCount21; ++b) // 8960
+    {
+        struct
+        {
+            int32 unk;
+            int32 unk;
+        } unkshit2;
+    }
+    int32 unkCount22;
+    for (b = 0; b < unkCount22; ++b) // 24536
+    {
+        struct
+        {
+            int32 unk;
+            char unk1[0x1C];
+        } unkshit3;
+    }
+    int32 unkCount23;
+    for (b = 0; b < unkCount23; ++b) // 15112
+    {
+        struct
+        {
+            int32 unk;
+            int32 unk;
+        } unkshit3;
+    }
+    int32 unk;
+    int32 unk;
+    for (b = 0; b < 2; ++b)
+    {
+        struct
+        {
+            int32 count;
+            struct
+            {
+                byte unk;
+                int32 unk;
+            } unkshit5[count] <optimize=false>;
+        } unkshit4;
+    }
+    struct
+    {
+        int32		unk;			//a1 + 80
+        int32		unk;			//v3 + 84
+        int32		unk;			//v3 + 88
+        int32		unk;			//v3 + 92
+        int32		unk;			//v3 + 96
+        int32		unk;			//v3 + 100
+        char		unk0[0x3C];		//v3 + 104
+        char		unk1[0x3C];		//v3 + 164
+        int32		unk;			//v3 + 1100
+        int32		unk;			//v3 + 1104
+        int64		unk;			//v3 + 1112
+        int32		unk;			//v3 + 1120
+        int32		unk;			//v3 + 1124
+        int32		unk;			//v3 + 1128
+        int64		unk;			//v3 + 1136
+        int32		unk;			//v3 + 1144
+        byte		unk;			//v3 + 1152
+        int32		unk;			//v3 + 1156
+        int16		unk;			//v3 + 1160
+        byte		unk;			//v3 + 360
+        int32       unkCount1;
+        byte        unkData1[unkCount1];
+        int32       unkCount2;
+        byte        unkData2[unkCount2];
+        int32       unkCount3;
+        int16       unkData3[unkCount3];
+        byte		unk;			//v3 + 480
+        byte		unk;			//v3 + 481
+        byte		unk;			//v3 + 976
+        byte		unk;			//v3 + 977
+        int32		unk;			//v3 + 980
+        int32		unk;			//v3 + 984
+        int64		unk;			//v3 + 992
+        byte		unk;			//v3 + 1016
+        int16		unk;			//v3 + 1336
+        int32		unk;			//v3 + 496
+        int32		unk;			//v3 + 500
+        int32		unk;			//v3 + 504
+        int64		unk;			//v3 + 512
+        int64		unk;			//v3 + 520
+        int64		unk;			//v3 + 528
+        int16		unk;			//v3 + 536
+        int64		unk;			//v3 + 544
+        int64		unk;			//v3 + 552
+        byte		unk;			//v3 + 560
+        int32		unk;			//v3 + 580
+        int32		unk;			//v3 + 576
+        int64		unk;			//v3 + 568
+        byte		unk;			//v3 + 589
+        byte		unk;			//v3 + 584
+        byte		unk;			//v3 + 588
+        int16		unk;			//v3 + 586
+        int64		unkStrLen0;		//v3 + 592
+        wchar_t		unkStr0[unkStrLen0];	//v3 + 592
+        int32		unk;			//v3 + 648
+        int32		unk;			//v3 + 652
+        int64		unkStrLen1;		//v3 + 656
+        wchar_t		unkStr1[unkStrLen1];	//v3 + 656
+        byte		unk;			//v3 + 712
+        byte		unk;			//v3 + 713
+        byte		unk;			//v3 + 714
+        int32		unk;			//v3 + 968
+        int32		unk;			//v3 + 972
+        int32		unk;			//v3 + 716
+        int32		unk;			//v3 + 720
+        int64		unk;			//v3 + 728
+        int64		unk;			//v3 + 768
+        int64		unk;			//v3 + 784
+        int64		unk;			//v3 + 800
+        int32		unk;			//v3 + 792
+        int16		unk;			//v3 + 796
+        int16		unk;			//v3 + 808
+        int64		unk;			//v3 + 776
+        int32		unk;			//v3 + 812
+        int32		unk;			//v3 + 816
+        int32		unk;			//v3 + 820
+        int32		unk;			//v3 + 832
+        int32		unk;			//v3 + 848
+        int32		unk;			//v3 + 864
+        int32		unk;			//v3 + 880
+        int32		unk;			//v3 + 896
+        int32		unk;			//v3 + 900
+        int32		unk;			//v3 + 904
+        int64		unk;			//v3 + 920
+        int32		unk;			//v3 + 908
+        int64		unk;			//v3 + 928
+        int64		unk;			//v3 + 936
+        int32		unk;			//v3 + 952
+        byte		unk;			//v3 + 956
+        byte		unk;			//v3 + 957
+        int64		unk;			//v3 + 960
+        int32		unk;			//v3 + 1000
+        byte		unk;			//v3 + 736
+        byte		unk;			//v3 + 737
+        char		unk2[0xC];		//v3 + 740
+        int16		unk;			//v3 + 752
+        int16		unk;			//v3 + 754
+        int64		unk;			//v3 + 760
+        byte		unk;			//v3 + 482
+        int64		unk;			//v3 + 488
+        int16		unk;			//v3 + 1018
+        int32		unk;			//v3 + 1020
+        int32		unk;			//v3 + 1024
+        int32 unkCC;
+        local int32 unkC;
+        for (a = 0; a < unkC; ++a)
+        {
+            int32 unk;
+            int32 unk;
+        }
+        char		unk00;			//v3 + 1056
+        int64		unk;			//v3 + 1064
+        char		unk11;			//v3 + 1072
+        int32		unk;			//v3 + 1080
+        int32		unk;			//v3 + 1076
+        int64		unk;			//v3 + 1088
+        int32		unk;			//v3 + 1096
+        int16		unk;			//v3 + 1162
+        int16		unk;			//v3 + 1164
+        int16		unk;			//v3 + 1166
+        int32		unk;			//v3 + 1168
+        int16		unk;			//v3 + 1172
+        char		unk22;			//v3 + 1174
+        char		unk32;			//v3 + 1175
+        int32		unk;			//v3 + 1196
+        int32		unk;			//v3 + 1208
+        int32		unk;			//v3 + 1224
+        int32		unk;			//v3 + 1228
+        int32		unk;			//v3 + 1232
+        int16		unk;			//v3 + 1236
+        int32		unk;			//v3 + 1176
+        int32		unk;			//v3 + 1180
+        int32		unk;			//v3 + 1184
+        int32		unk;			//v3 + 1188
+        int32		unk;			//v3 + 1192
+        int16		unk;			//v3 + 1304
+        int16		unk;			//v3 + 1306
+        char		unk43;			//v3 + 1308
+        int32		unk;			//v3 + 1240
+        int32		unk;			//v3 + 1244
+        int32		unk;			//v3 + 1248
+        int32		unk;			//v3 + 1252
+        int32 unkBB;
+        local int32 c;
+        for (c = 0; c < unkBB; ++c)
+        {
+            int32 unk;
+            int64 unk;
+        }
+        int32 unkBC;
+        for (c = 0; c < unkBC; ++c)
+        {
+            int32 unk;
+            int64 unk;
+        }
+        int64		unk;			//v3 + 1312
+        int16		unk;			//v3 + 1320
+        int32		unk;			//v3 + 1340
+        int64		unk;			//v3 + 1344
+        char		unk0132;	    //v3 + 1352
+        int64		unk;			//v3 + 1360
+        int64		unk;			//v3 + 1328
+    } sub_140CE0A80;
+} Data;

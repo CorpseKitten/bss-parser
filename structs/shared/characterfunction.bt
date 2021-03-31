@@ -1,0 +1,208 @@
+//------------------------------------------------
+//   File: characterfunction.bss
+//   Table: CharacterFunction_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+local int32 c;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct{
+        uint16 index;
+        char shopType;
+        char tradeGroup;
+        char unk; // 0
+        char unk; // 4
+        // buy - confirmed
+        int64 buyingFromNpcNameLength;
+        wchar_t buyingFromNpcName[buyingFromNpcNameLength];
+        int64 conditionForBuyingFromNpcLength;
+        wchar_t conditionForBuyingFromNpc[conditionForBuyingFromNpcLength];
+        uint16 itemMainGroupKeyForBuyingFromNpc;
+        // sell - confirmed
+        int64 sellingToNpcNameLength;
+        wchar_t sellingToNpcName[sellingToNpcNameLength];
+        int64 conditionForSellingToNpcLength;
+        wchar_t conditionForSellingToNpc[conditionForSellingToNpcLength];
+        uint16 itemMainGroupKeyForSellingToNpc;
+        // guild buy - confirmed
+        int64 buyingFromGuildShopNpcNameLength;
+        wchar_t buyingFromGuildShopNpcName[buyingFromGuildShopNpcNameLength];
+        int64 conditionForBuyingFromGuildShopNpcLength;
+        wchar_t conditionForBuyingFromGuildShopNpc[conditionForBuyingFromGuildShopNpcLength];
+        uint16 itemMainGroupKeyForBuyingFromNpc;
+        // guild sell - confirmed
+        int64 SellingToGuildShopNpcNameLength;
+        wchar_t SellingToGuildShopNpcName[SellingToGuildShopNpcNameLength];
+        int64 conditionForSellingToGuildShopNpcLength;
+        wchar_t conditionForSellingToGuildShopNpc[conditionForSellingToGuildShopNpcLength];
+        uint16 itemMainGroupKeyForSellingToNpc;
+        // trade - confirmed
+        int64 tradingNameLength;
+        wchar_t tradingName[tradingNameLength];
+        int64 conditionForTradingLength;
+        wchar_t conditionForTrading[conditionForTradingLength];
+        uint16 itemMainGroupKeyForTrading;
+        // auction - confirmed
+        int64 auctionNameLength;
+        wchar_t auctionName[auctionNameLength];
+        int64 conditionForAuctionLength;
+        wchar_t conditionForAuction[conditionForAuctionLength];
+        int16 auctionKey;
+        // mating - confirmed
+        int64 matingNameLength;
+        wchar_t matingName[matingNameLength];
+        int64 conditionForMatingLength;
+        wchar_t conditionForMating[conditionForMatingLength];
+        int16 matingKey;
+        // inn
+        int64 innNameLength;
+        wchar_t innName[innNameLength];
+        int64 conditionForInnLength;
+        wchar_t conditionForInn[conditionForInnLength];
+        char innKey;
+        // explore
+        int64 exploreKeyNameLength;
+        wchar_t exploreKeyName[exploreKeyNameLength];
+        int64 conditionRewardExploreLength;
+        wchar_t conditionRewardExplore[conditionRewardExploreLength];
+        char rewardExploreKey;
+        // skill - confirmed
+        int64 skillNameLength;
+        wchar_t skillName[skillNameLength];
+        int64 conditionTrainSkillLength;
+        wchar_t conditionTrainSkill[conditionTrainSkillLength];
+        char isTrainSkill;
+        // repair - confirmed
+        int64 repairNameLength;
+        wchar_t repairName[repairNameLength];
+        int64 conditionRepairLength;
+        wchar_t conditionRepair[conditionRepairLength];
+        char isRepair;
+        // warehouse - confirmed
+        int64 warehouseNameLength;
+        wchar_t warehouseName[warehouseNameLength];
+        int64 conditionWarehouseLength;
+        wchar_t conditionWarehouse[conditionWarehouseLength];
+        char isWarehouse;
+        // stable - confirmed
+        int64 stableNameLength;
+        wchar_t stableName[stableNameLength];
+        int64 conditionStableLength;
+        wchar_t conditionStable[conditionStableLength];
+        char stableType;
+        int32 stableKeySize;
+        for (b = 0; b < stableKeySize; ++b)
+        {
+            struct
+            {
+                char stableKey;
+            } stableKeyData;
+        }
+        // transfer - confirmed
+        int64 transferNameLength;
+        wchar_t transferName[transferNameLength];
+        int64 conditionTransferLength;
+        wchar_t conditionTransfer[conditionTransferLength];
+        char isTransfer;
+        // transfer person - confirmed
+        int64 transferPersonNameLength;
+        wchar_t transferPersonName[transferPersonNameLength];
+        int64 conditionTransferPersonLength;
+        wchar_t conditionTransferPerson[conditionTransferPersonLength];
+        char isTransferPerson;
+        // intimacy - confirmed
+        int64 intimacyNameLength;
+        wchar_t intimacyName[intimacyNameLength];
+        int64 conditionIntimacyLength;
+        wchar_t conditionIntimacy[conditionIntimacyLength];
+        char isIntimacy;
+        char isGreatNpc;
+        // guild - confirmed
+        int64 guildNameLength;
+        wchar_t guildName[guildNameLength];
+        int64 conditionGuildLength;
+        wchar_t conditionGuild[conditionGuildLength];
+        char isGuild;
+        // guide explore
+        int64 exploreNameLength;
+        wchar_t exploreName[exploreNameLength];
+        int64 conditionExploreLength;
+        wchar_t conditionExplore[conditionExploreLength];
+        int32 exploreWayPointCount;
+        for (c = 0; c < exploreWayPointCount; ++c)
+        {
+            struct
+            {
+                 int32 exploreWayPoint;
+            } stableKeyData;
+        }
+        int32 guideWaypoint;
+        if (guideWaypoint > 0)
+            int32 unk;
+        // lord menu - confirmed
+        int64 lordMenuNameLength;
+        wchar_t lordMenuName[lordMenuNameLength];
+        int64 conditionLordMenuLength;
+        wchar_t conditionLordMenu[conditionLordMenuLength];
+        char isLordMenu;
+        // minor lord menu - confirmed
+        int64 minorLordMenuNameLength;
+        wchar_t minorLordMenuName[minorLordMenuNameLength];
+        int64 conditionMinorLordMenuLength;
+        wchar_t conditionMinorLordMenu[conditionMinorLordMenuLength];
+        int16 isMinorLordMenu;
+        // extract - confirmed
+        int64 extractNameLength;
+        wchar_t extractName[extractNameLength];
+        int64 conditionExtractLength;
+        wchar_t conditionExtract[conditionExtractLength];
+        char isExtract;
+        // unk block
+        char skip5[18];
+        // territory supply - confirmed
+        int64 territorySupplyNameLength;
+        wchar_t territorySupplyName[territorySupplyNameLength];
+        int64 conditionForTerritorySupplyLength;
+        wchar_t conditionForTerritorySupply[conditionForTerritorySupplyLength];
+        int16 territoryKeyForTerritorySupply;
+        // market - confirmed
+        int64 itemMarketNameLength;
+        wchar_t itemMarketName[itemMarketNameLength];
+        int64 conditionForItemMarketLength;
+        wchar_t conditionForItemMarket[conditionForItemMarketLength];
+        int16 territoryKeyForItemMarket;
+        // knowledge - confirmed
+        int64 knowledgeNameLength;
+        wchar_t knowledgeName[knowledgeNameLength];
+        int64 conditionForKnowledgeLength;
+        wchar_t conditionForKnowledge[conditionForKnowledgeLength];
+        char isKnowledgeManagement;
+        // supply shop - confirmed
+        int64 supplyShopNameLength;
+        wchar_t supplyShopName[supplyShopNameLength];
+        int64 conditionForSupplyShopLength;
+        wchar_t conditionForSupplyShop[conditionForSupplyShopLength];
+        char supplyShopKey;
+        // fish supply shop - confirmed
+        int64 fishSupplyShopNameLength;
+        wchar_t fishSupplyShopName[fishSupplyShopNameLength];
+        int64 conditionForFishSupplyShopLength;
+        wchar_t conditionForFishSupplyShop[conditionForFishSupplyShopLength];
+        char fishSupplyShopKey;
+        // guild supply shop - confirmed
+        int64 guildSupplyShopNameLength;
+        wchar_t guildSupplyShopName[guildSupplyShopNameLength];
+        int64 conditionForGuildSupplyShopLength;
+        wchar_t conditionForGuildSupplyShop[conditionForGuildSupplyShopLength];
+        char guildSupplyShopKey;
+        // awaken skill
+        int64 awakenSkillNameLength;
+        wchar_t awakenSkillName[awakenSkillNameLength];
+        int64 conditionForAwakenSkillLength;
+        wchar_t conditionForAwakenSkill[conditionForAwakenSkillLength];
+        char isAwakenSkill;
+        char isStallionSkillExpTraining;
+    } characterFunctionData;
+}

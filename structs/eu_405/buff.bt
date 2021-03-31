@@ -1,0 +1,53 @@
+//------------------------------------------------
+//   File: buff.bt
+//   Table: Buff_Table
+//------------------------------------------------
+
+struct BodyData
+{
+    uint16      Index;
+    uint64      BuffNameLength;
+    wchar_t     BuffName[BuffNameLength];
+    uint32      Level;
+    uint16      Group;
+    uint16      ConditionType;
+    ubyte       ModuleType;
+	byte        ParameterUsed[10];
+	int64       ParameterData[10];
+    int64		unkStrLen0;
+    wchar_t		unkStr0[unkStrLen0];
+    byte		BuffType;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    int32	    ValidityTime;
+    int32		RepeatTime;
+    int64		MaxConditionApplyCount;
+    int16		unk;
+    byte		NeedEquipType;
+    byte 		unk;
+    byte 		unk;
+    byte 		unk;
+    byte 		unk;
+    byte 		unk;
+    byte 		unk;
+    byte 		NeedEquipSlot;
+    byte 		unk;
+    byte		ApplyToGroup;
+    byte		unk;
+    int64		BuffEffectLength;
+    wchar_t		BuffEffect[BuffEffectLength];
+    int64		BuffIconLength;
+    wchar_t		BuffIcon[BuffIconLength];
+    byte		IsDisplay;
+    int32		ApplyRate;
+    int64		DescriptionLength;
+    wchar_t		Description[DescriptionLength];
+};
+
+
+struct
+{
+    int32 count;
+    BodyData data[count] <optimize=false>;
+} Data;

@@ -1,0 +1,19 @@
+//------------------------------------------------
+//   File: zodiacsignorder.bss
+//   Table: ZodiacSignIndex_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 zodiacSignIndexKey;
+        int64 indexesCount;
+        for (b = 0; b < indexesCount; ++b)
+            int16 index;
+        byte zodiacSignKey;
+        int16 zodiacSignIndexKey;
+    } zodiacSignOrderData;
+}

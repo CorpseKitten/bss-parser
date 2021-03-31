@@ -1,0 +1,16 @@
+//------------------------------------------------
+//      File: itempalette.bss
+//     Table: DyeingItem_Table
+//------------------------------------------------
+local int32 a;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        int32 item_key;
+        byte palette_type;
+        byte palette_index;
+    } item_palette;
+}

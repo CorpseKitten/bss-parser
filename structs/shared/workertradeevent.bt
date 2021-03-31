@@ -1,0 +1,22 @@
+//------------------------------------------------
+//   File: workertradevevnt.bss
+//   Table: TradeEvent_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int32 tradeEventKey;
+        int32 eventType;
+        int32 eventRate;
+        int64 eventvalue1;
+        int64 eventValue2;
+        int64 eventValue3;
+        int64 eventValue4;
+        int64 descriptionLenght;
+        wchar_t description[descriptionLenght];
+        int32 tradeEventKey;
+    } tradeEventData;
+}

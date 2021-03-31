@@ -1,0 +1,21 @@
+//------------------------------------------------
+//      File: itemexchangetoclass.bss
+//     Table: 
+// fixme
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        int32 unk;
+        int32 unkCount;
+        for (b = 0; b < unkCount; ++b)
+        {
+            int32 unk;
+        }
+    } item_exchange_to_class;
+}

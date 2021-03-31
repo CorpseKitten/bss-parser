@@ -1,0 +1,21 @@
+//------------------------------------------------
+//   File: undegroundinfo.bss
+//   Table: Underground_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uchar B;
+        uchar G;
+        uchar R;
+        uchar A;
+        uchar B;
+        uchar G;
+        uchar R;
+        uchar A;
+        int16 dropId;
+    } undergroundInfoData;
+}

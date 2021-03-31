@@ -1,0 +1,21 @@
+//------------------------------------------------
+//   File: tax.bss
+//   Table: Tax
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount; // taxType or TerritoryKey?
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uint16 territoryKey;
+        uint16 territoryKey;
+        for (b = 0; b < 8; ++b) // pass 1x for each taxType
+        {
+            int32 minPercentOrPrice;
+            int32 maxPercentOrPrice;
+            int32 systemPercent;
+        }
+    } taxData;
+}

@@ -1,0 +1,19 @@
+//------------------------------------------------
+//   File: cashproductcategory.bss
+//   Table: 
+//------------------------------------------------
+local int32 a;
+//local int32 b;
+int64 len;
+wchar_t str[len];
+char unk;
+int32 counter;
+for (a = 0; a < counter; ++a)
+{
+    struct
+    {
+        int16 key;
+        wchar_t categoryName[8];
+        char unk1[194];
+    } cashProductCatData;
+}

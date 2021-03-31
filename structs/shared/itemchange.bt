@@ -1,0 +1,18 @@
+//------------------------------------------------
+//      File: itemchange.bss
+//     Table: ItemChange_Table  
+//------------------------------------------------
+local int32 a;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        int16 index;
+        int16 index;
+        int32 from_item_key;
+        int32 to_item_key;
+        int32 type;
+    } item_change;
+}

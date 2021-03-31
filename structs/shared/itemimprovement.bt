@@ -1,0 +1,19 @@
+//------------------------------------------------
+//      File: itemimprovement.bss
+//     Table: ItemImprovementResult_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        int32 index;
+        int32 group_count;
+        for (b = 0; b < group_count; ++b)
+            uint16 group_item;
+        byte unk;
+    } item_improvement_result;
+}

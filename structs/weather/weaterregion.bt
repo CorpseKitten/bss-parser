@@ -1,0 +1,15 @@
+struct WeaterRegion
+{
+    float PositionX;
+    float PositionZ;
+    float PositionY;
+    float ProductSpeedRate;
+    int32 NotWeatherKind;
+    float WeatherFactorValue;
+};
+
+struct
+{
+    int32           count;
+    WeaterRegion    data[count] <optimize=false>;
+} Data;

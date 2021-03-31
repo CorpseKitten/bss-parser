@@ -1,0 +1,33 @@
+//------------------------------------------------
+//   File: actionexp.bss
+//   Table: ActionEXP_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 classCount;
+for (a = 0; a < classCount; ++a)
+{
+    struct
+    {
+        int32 levelCount;
+        for (b = 0; b < levelCount; ++b)
+        {
+            struct
+            {
+                int32 level;
+                char class;
+                int32 level;
+                // EXP
+                int64 quest;
+                int64 collect;
+                int64 manufacture;
+                int64 alchemy;
+                int64 fishing;
+                int64 horseTaming;
+                int64 study;
+                int64 trade;
+                int64 farming;
+            } actionExpByLevelData;
+        }
+    } actionExpByClassData;
+}

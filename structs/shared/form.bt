@@ -1,0 +1,21 @@
+//------------------------------------------------
+//   File: form.bss
+//   Table: 
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 index;
+        int16 index;
+        char type;
+        int32 actionIndex;
+        int16 tier;
+        int64 iconImageFile1Length;
+        wchar_t iconImageFile1[iconImageFile1Length];
+        int64 iconImageFile2Length;
+        wchar_t iconImageFile2[iconImageFile2Length];
+    } formData;
+}

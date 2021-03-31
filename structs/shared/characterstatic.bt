@@ -1,0 +1,148 @@
+int32 rowCount;
+local int32 a;
+local int32 b;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+	{
+        uint16      Index;
+		byte		IsHiddenName;
+		byte		IsHiddenHP;
+		int16		unk;
+		byte		unk;
+		byte		IsRenderShadow;
+		byte		UseDefaultAudio;
+		byte		unk;
+		byte		unk;
+        int64 		activeConditionLength;
+        wchar_t 	activeCondition[activeConditionLength];
+        int64 		interactionConditionLength;
+        wchar_t 	interactionCondition[interactionConditionLength];
+        char        unk;
+		uint16		DropID;
+		int16		CharacterGroup;
+		byte		CharKind;
+		byte		GradeType;
+		int32		VariedTendencyOnDead;
+		float		BoxSize[3];
+		int32		unk;
+		int16		CollectDropID;
+		struct
+		{
+			float		HP;
+			int32		MP;
+			int16		unk;
+			int32		unk;
+			int32		unk;
+			int32		unk;
+			int32		unk;
+			int32		unk;
+			int32		unk;
+			int32		unk;
+			int32		unk;
+			int32		unk;
+			int32		unk;
+			int32		MaxCriticalRate;
+			int32		MaxFishingLuck;
+			int32		MaxCollectItemLuck;
+			int32		MaxDropItemLuck;
+			int64		PossessableWeight;
+			float		unk;
+			int32		Suspension;
+			int32		unk0[3];
+			int32		VariedAttackSpeed;
+			int32		VariedMoveSpeed;
+			int32		VariedCastSpeed;
+			int32		MaxAttackSpeed;
+			int32		MaxMoveSpeed;
+			int32		MaxCastSpeed;
+		} CharacterStats;
+		byte		IsFixed;
+		byte		IsCacheAble;
+		byte		unk; // 1
+		byte		unk; // 1
+		byte		unk; // 0
+		byte		unk; // 0
+		byte		unk; // 0
+		byte		unk; // 0
+		byte		unk;
+		byte		VehicleType;
+		byte		VehicleSeatCount;
+		byte		unk;
+		byte		WorldMapDisplayType;
+		int32		TribeType;
+		byte		InventoryMax;
+		byte		unk;
+		byte		unk;
+		byte		unk;
+		byte		unk;
+		byte		IsPushAble; // #2=ispushable "byte"
+		byte		unk;
+		byte		unk;
+		byte		unk;
+		byte		unk;
+		byte		unk;
+		byte		unk;
+		byte		unk;
+		byte		unk;
+		int32		Level;
+		int32		unk;
+		int64		VanishTime;
+		float		BodySize;
+		float		BodyHeight;
+		int32		Weight;
+		int32		ObstacleType;
+		int32		unk;
+		float		ObstacleBodyHeight;
+		int32		unk;
+		int32		unk;
+		int32		unk;
+		int32		unk;
+		int16		SpawnStartTime;
+		int16		SpawnEndTime;
+		int32		unk;
+		byte		unk;
+		int32		unk;
+		byte		unk;
+		int16		unk;
+		int16		unk;
+        int64 		aiScriptClassNameLength;
+        char 		aiScriptClassName[aiScriptClassNameLength];
+        int64 		actionScriptFilePrefixLength;
+        char 		actionScriptFilePrefix[actionScriptFilePrefixLength];
+        int64 		charDisplayNameLength;
+        wchar_t 	charDisplayName[charDisplayNameLength];
+        int64 		charNameLength;
+        wchar_t 	charName[charNameLength];
+        int64 		charTitleLength;
+        wchar_t 	charTitle[charTitleLength];
+        int64 		voiceBankFileNameLength;
+        char 		voiceBankFileName[voiceBankFileNameLength];
+        char unk;
+        int32 unk;
+        int16 unk;
+        char unk;
+        int64 unkStrLen1;
+        char unkStr1[unkStrLen1];
+        int64 unkStrLen2;
+        char unkStr2[unkStrLen2];
+        int16 unk;
+        int32 unk;
+        int32 holdItemKeySize;
+        for (b = 0; b < holdItemKeySize; ++b)
+            {
+                struct {
+                    int16 itemKey;
+                } itemSubGroupData;
+            }
+        int32 unk;
+        float unk;
+        float unk;
+        float unk;
+        int32 unk;
+        int32 unk;
+        int16 unk;
+
+        int32 unk;
+    }characterData;
+}

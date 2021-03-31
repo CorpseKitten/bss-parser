@@ -1,0 +1,26 @@
+//------------------------------------------------
+//      File: explorepointexperience.bss
+//     Table:  
+//------------------------------------------------
+typedef struct RegionPointData
+{
+	int16 Unk;
+	int64 Unk;
+};
+
+typedef struct BodyData
+{
+	int16   Unk;
+	int16   Unk;
+	int64   RegionNameLength;
+	wchar_t RegionName[RegionNameLength];
+	RegionPointData region_points[20];
+};
+
+struct Data
+{
+	uint32 count;
+	BodyData bodyData[count] <optimize=false>;
+};
+
+Data data;

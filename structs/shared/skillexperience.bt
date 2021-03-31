@@ -1,0 +1,18 @@
+//------------------------------------------------
+//      File: skillexperience.bss
+//     Table: SkillExpPoint_Table 
+//------------------------------------------------
+struct BodyData
+{
+    int16		Index;
+    int16		AquiredPoint;
+    int32		RequireEXP;
+    int32		RequireSkillExpLimit;
+    int32		QuestRequireExpLimit;
+};
+
+struct
+{
+    int32 count;
+    BodyData data[count] <optimize=false>;
+} Data;

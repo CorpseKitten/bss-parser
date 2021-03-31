@@ -1,0 +1,66 @@
+//------------------------------------------------
+//   File: cashproduct.bss
+//   Table: CashProduct_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+local int32 c;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uint16 productNo;
+        wchar_t productName[102];
+        int64 productDescLength;
+        wchar_t productDesc[productDescLength];
+        int32 displayOrder;
+        struct
+        {
+            for (b = 0; b < 32; ++b) // 32 classes
+                char isAllowed;
+        } classIdAllowedData;
+        int32 offerGroup;
+        char unk;
+        int64 priceCash;
+        int64 pricePearl;
+        int64 priceMileage;
+        int64 priceSilver;
+        int64 unk;
+        char unk;
+        int64 salesStartPeriod;
+        int64 salesEndPeriod;
+        int64 discountStartPeriod;
+        int64 discountEndPeriod;
+        int64 packageIconLength;
+        wchar_t packageIcon[packageIconLength];
+        struct
+        {
+            for (c = 0; c < 10; ++c) // 10 products on same package
+                int32 productItemKey;
+            for (c = 0; c < 10; ++c) // 10 products on same package
+                int64 stackCount;
+        } productItemKeyData;
+        char purchaseSubject;
+        int64 purchaseCountLimit;
+        char unk; // 0
+        char unk; // 0
+        int16 displayFilter;
+        char skip2[6]; // 0
+        int32 productItemKeyCount;
+        int32 resetHour;
+        int16 couponCategoryMain;
+        int16 couponCategoryMidlle;
+        int16 couponCategorySmall;
+        int16 couponCategorySub1Main;
+        int16 couponCategorySub1Midlle;
+        int16 couponCategorySub1Small;
+        int16 couponCategorySub2Main;
+        int16 couponCategorySub2Midlle;
+        int16 couponCategorySub2Small;
+        char isMallDisplay;
+        char unk; // 1
+        char unk; // 1
+        char unk; // 0,1,2
+    } cashProductData;
+}

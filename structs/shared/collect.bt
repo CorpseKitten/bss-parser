@@ -1,0 +1,29 @@
+//------------------------------------------------
+//   File: collect.bss
+//   Table: Collect_Table
+//------------------------------------------------
+local int32 a;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uint16 index;
+        int64 always_0;
+        uint16 index;
+        char productDataType;
+        int32 productTime;
+        float productAllHp;
+        float productDecreaseHP;
+        uint16 itemDropId;
+        char toolType_0;
+        char toolType_1;
+        char toolType_2;
+        uint16 itemDropId_0;
+        uint16 itemDropId_1;
+        uint16 itemDropId_2;
+        int32 always_1; // productSkillLevel OR actionPoint?
+        int32 spawnDelay;
+        int32 spawnVariableTime;
+    } collectData;
+}

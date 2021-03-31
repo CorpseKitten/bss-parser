@@ -1,0 +1,40 @@
+//------------------------------------------------
+//   File: buildingsource.bss
+//   Table: BuildingSource_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+local int32 c;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int32 index;
+        int32 index;
+        int16 indexType;
+        int32 unk;
+        int32 buildTime;
+        char workAniType;
+        int32 repairItemKey;
+        int64 repairItemCount;
+        int64 repairItemTime;
+        int32 sourceItemlistSize;
+        for (b = 0; b < sourceItemlistSize; ++b)
+        {
+            struct
+            {
+                int32 sourceItemKey;
+                int32 sourceItemCount;
+            } sourceItemData;
+        }
+        int32 sourceItemlistCount;
+        for (c = 0; c < sourceItemlistCount; ++c)
+        {
+            struct
+            {
+                int32 sourceItemCount;
+            } sourceItemCountData;
+        }
+    } buildingData;
+}

@@ -1,0 +1,50 @@
+//------------------------------------------------
+//   File: territoryinfo.bss
+//   Table: Territory_Table + TerritoryTradeItemList_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        int16 territoryKey;
+        byte itemGroupKeyType; // 0,1
+        byte hasBothItemGroupKeyType; // 0,1
+        float occupingTentPositionX;
+        float occupingTentPositionY;
+        float occupingTentPositionZ;
+        // ARGB?
+        uchar unk;
+        uchar unk;
+        uchar unk;
+        uchar unk;
+        int64 nationalNameLenght;
+        wchar_t nationalName[nationalNameLenght];
+        int64 territoryNameLenght;
+        wchar_t territoryName[territoryNameLenght];
+        int64 territoryImageLenght;
+        wchar_t territoryImage[territoryImageLenght];
+        int64 territorySmallLenght;
+        wchar_t territorySmall[territorySmallLenght];
+        int32 bootyItemCount;
+        struct
+        {
+            for (b = 0; b < bootyItemCount; ++b)
+                int32 bootyItem;
+        } bootyItemData;
+        int32 territoryGroupKeyType0Count;
+        struct
+        {
+            for (b = 0; b < territoryGroupKeyType0Count; ++b)
+                int16 territoryGroupKey;
+        } territoryGroupKeyType0Data;
+        int32 territoryGroupKeyType1Count;
+        struct
+        {
+            for (b = 0; b < territoryGroupKeyType1Count; ++b)
+                int16 territoryGroupKey;
+        } territoryGroupKeyType1Data;
+    } territoryInfoData;
+}

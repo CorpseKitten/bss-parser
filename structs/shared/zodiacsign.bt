@@ -1,0 +1,40 @@
+//------------------------------------------------
+//   File: zodiacsign.bss
+//   Table: ZodiacSign_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        byte zodiacSignKey;
+        int32 pointCount;
+        for (b = 0; b < pointCount; ++b)
+        {
+            struct
+            {
+                float point[3];
+            } pointData;
+        }
+        int32 lineCount;
+        for (b = 0; b < lineCount; ++b)
+        {
+            struct
+            {
+                int16 lineValue1;
+                int16 lineValue2;
+            } lineData;
+        }
+        int64 zodiacNameLength;
+        wchar_t zodiacName[zodiacNameLength];
+        int64 descLength;
+        wchar_t desc[descLength];
+        int64 customizeLength;
+        wchar_t customize[customizeLength];
+        int64 imageLength;
+        wchar_t image[imageLength];
+        byte zodiacSignKey;
+    } zodiacSignData;
+}

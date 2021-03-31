@@ -1,0 +1,279 @@
+//------------------------------------------------
+//   File: itemenchant.bss
+//   Table: 1_LongSword, 
+//          2_Blunt, 
+//          3_TwoHandSword, 
+//          4_Bow, 
+//          5_Dagger,
+//          Item_Table
+//------------------------------------------------
+local int32 b;
+typedef struct BodyData
+{
+    uint16		ItemId;
+    uint16		ItemEnchant;
+    int64		ItemNameLength;
+    wchar_t		ItemName[ItemNameLength];
+    byte		ItemType;
+    byte		ItemClassify;
+    byte		GradeType;
+    byte        EquipType;
+    byte        IsDropable;
+    char		unk0[7]; // isDyable
+    char		OccupiedEquipType[0x1F]; // 31 = not occupied
+    char		OccupiedEquipNo[0x1F];   // 68 = not occupied.
+    byte		unk;
+    byte		ItemMaterial;
+    int32		Weight;
+    byte		unk;
+    byte		unk;
+    int32		ExpirationPeriod;
+    byte		VestedType;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    //byte		unk;
+    //byte		unk;
+    char		ItemTableAllowedClasses[0x20];
+    char		ItemTableAllowedPets[0x14];
+    int32		unk;
+    float		unk;
+    byte		LifeExpType;
+    int32		unk;
+    byte		unk;
+    byte		ItemAccessLevel;
+    int64		OriginalPrice;
+    int64		SellPriceToNpc;
+    int32		OriginalPriceRate[3];
+    int32		PriceRate[3];
+    int64		RepairPrice;
+    int64		RepairTime;
+    int64		unk;
+    int64		unk;
+    int64		unk;
+    int64		unk;
+    int32		MaxestPercentForItemMarket;
+    int32		MinestPercentForItemMarket;
+    int64		BasePriceForItemMarket;
+    int16		unk;
+    byte		unk;
+    int64       unkC;       
+    char        unk7[16 * unkC] <optimize=false>; 	
+    byte		unk;
+    byte		unk;
+    int32		unk;
+    int32		unk;
+    int16		ContentsEventType;
+    int32		ContentsEventParam1;
+    int32		ContentsEventParam2;
+    byte		unk;
+    byte		unk;
+    int64		unk;
+    int16		unk;
+    int32		unk;
+    byte		unk;
+    int16		unk;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    byte		doLogging; // WRONG PLACED!
+    int16		Character_Key;
+    int32		unk;
+    int64		UseConditionLength;
+    wchar_t		UseCondition[UseConditionLength];
+    int32		unk;
+    int64		IconImageFileLength;
+    wchar_t		IconImageFile[IconImageFileLength];
+    int64		DescriptionTableLength;
+    wchar_t		DescriptionTable[DescriptionTableLength];
+    int64		unkStrLen5;
+    wchar_t		unkStr5[unkStrLen5];
+    int32		unk;
+    int64		unkStrLen6;
+    wchar_t		unkStr6[unkStrLen6];
+    int64		unkStrLen7;
+    wchar_t		unkStr7[unkStrLen7];
+    byte		unk;
+    int64		unkA;
+    char		unk8[16 * unkA] <optimize=false>;
+    int64		unkB;       
+    int16		unk9[unkB] <optimize=false>;
+    int64		unkD;       
+    int32		unk10[unkD] <optimize=false>;  
+    byte		unk;
+    int16		unk;
+    byte		unk;
+    int16		unk;
+    int16		unk;
+    byte		unk;
+    int32		unk;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    int64		unk;
+    int64		unk;
+    byte		unk;
+    byte		unk;
+    byte		unk;
+    byte		ArmorMaterial;
+    int32		unk;
+    int64		unk;
+    int16		EnduranceLimit;
+    byte		unk;
+    int32		unk;
+    byte		marketCategory1;
+    byte		marketCategory2;
+    byte		marketFilter1;
+    byte		marketFilter2;
+
+    struct
+    {
+        int32 v485;
+        byte CanBeEnchanted;
+        if (CanBeEnchanted > 0)
+        {
+            int16		NeedEnchantItemID;
+            int16		Enchant;
+            int16		NeedEnchantItemID;
+            int16		unk;
+            int64		NeedEnchantItemCount;
+            int64		NeedPerfectEnchantItemCount;
+            int64		BlackCountForItemMarket;
+            int64		unk;
+            int32		EnchantSuccessRate;
+            int32		EnchantAddRate;
+            int32		unk;
+            int16		EnduranceLimit;
+            int16		ReduceMaxEnduranceAtFail;
+            int16		RecoverMaxEndurance;
+            int16		ReduceMaxEnduranceAtPerfectEnchant;
+            int32		unk;
+            int32		unk;
+            int32		unk;
+            int32		unk;
+            float		unk00[10];	
+            int32		unk;
+            int32		unk;
+            int32		unk;
+            int32		unk;
+            int32		unk;
+            int32		unk;
+            int32		unk;					
+            int64		unk;
+            int32		unk;
+            int32		unk;
+            byte		unk;
+            float		unkF;
+            float		unkF;
+            float		unkF;
+            // stats start?				
+            float		unkF;
+            float		unkF;
+            float		unkF;
+            float		unkF;
+            float		unkF;				
+            float		unkF;
+            float		unkF;
+            float		unkF;					
+            float		unkF;
+            float		unkF;
+            float		unkF;					
+            float		unkF;
+            float		unkF;
+            float		unkF;					
+            float		unkF;
+            float		unkF;
+            float		unkF;
+            // stats end?
+            int16		unk;
+            int16		unk;
+            int64		DescriptionLength;
+            wchar_t		Description[DescriptionLength];
+            int64		v485StrLen;
+            wchar_t     v485Str[v485StrLen];
+            char        unk;
+            char        unk;
+            int32       unk;
+            int32       unk;
+            byte		MarketFilter1;
+            byte		MarketFilter2;
+            byte		unk;
+
+            struct
+            {
+                for (b = 0; b < 3; ++b)
+                {
+                    struct
+                    {
+                        int64 statTypeLength; 			// Melee, Ranged, Magic
+                        wchar_t DRM_DD[statTypeLength]; // DDD,RDD,MDD
+                        float DRM_HIT; 					// DHIT, RHIT, MHIT
+                    } offensiveStatData;
+                }
+                for (b = 0; b < 3; ++b)
+                {
+                    struct
+                    {
+                        float DRM_DV; 					// DDV,RDV,MDV
+                        float H_DRM_DV; 				// HDDV,HRDV,HMDV
+                        float DRM_PV; 					// DPV,RPV,MPV
+                        float H_DRM_PV; 				// HDPV,HRPV,HMPV
+                    } defensiveStatData;
+                }
+                int32 unk;
+            } statsData;
+        }
+    } table_data;
+
+    struct
+    {
+        byte		unkCrap;
+        if (unkCrap > 0)
+        {
+            char		unk0[0x80];
+            int16		unk1[32]; // not empty - data inside
+            char		unk2[0x24];
+            char		unk3[0x3C];
+            char		unk4[0x0C];
+            char        idx; // incremental ++
+            char        unk5; // always 7
+            int16       unk6; // always 0
+        }
+        else
+        {
+            byte unk;
+        }
+    } market_data;
+};
+
+typedef struct FooterData
+{
+    uint16 ItemID;
+    ubyte  Enchant;
+};
+
+struct Data
+{
+    struct
+    {
+        int32       count;
+        BodyData    bodyData[count] <optimize=false>;
+    } Body;
+
+    struct
+    {
+        int32       footerDataCount;
+        FooterData  footerData[footerDataCount] <optimize=false>;
+    } Footer;
+};
+
+Data data;

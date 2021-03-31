@@ -1,0 +1,18 @@
+//------------------------------------------------
+//      File: houseinfoviewposition.bss
+//      Table: HouseViewPostion
+//      Note: HouseGroupType is missing
+//------------------------------------------------
+local int32 a;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        int32 house_key;
+        int32 territory_key;
+        float position[3];
+        float rotation_matrix[3];
+    } house_view_position;
+}

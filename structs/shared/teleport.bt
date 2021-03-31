@@ -1,0 +1,26 @@
+//------------------------------------------------
+//   File: teleport.bss
+//   Table: Teleport_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 typeCount;
+for (a = 0; a < typeCount; ++a)
+{
+    struct
+    {
+        int32 locationCount;
+        for (b = 0; b < locationCount; ++b)
+        {
+            struct
+            {
+                int16 FFFF; // -1
+                int16 FFFF; // -1
+                ubyte type;
+                float positionX;
+                float positionY;
+                float positionZ;
+            } locationData;
+        }        
+    } teleportData;
+}

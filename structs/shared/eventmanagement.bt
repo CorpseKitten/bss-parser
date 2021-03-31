@@ -1,0 +1,22 @@
+//------------------------------------------------
+//   File: eventmanagement.bss
+//   Table: EventManage
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 typeCount;
+for (a = 0; a < typeCount; ++a)
+{
+    struct
+    {
+        int16 eventNo;
+        int16 eventNo;
+        int64 eventNameLength;
+        wchar_t eventName[eventNameLength];
+        int64 conditionLength;
+        wchar_t condition[conditionLength];
+        int64 settedEventLength;
+        wchar_t settedEvent[settedEventLength];
+        char unk;
+    } eventData;
+}

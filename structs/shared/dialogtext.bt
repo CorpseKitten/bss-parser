@@ -1,0 +1,27 @@
+//------------------------------------------------
+//   File: dialogtext.bss
+//   Table: DialogText_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct
+    {
+        uint32 unk;
+        uint32 unk;
+        int64 indexLength;
+        wchar_t index[indexLength];
+        int32 indexDataCount;
+        for (b = 0; b < indexDataCount; ++b)
+        {
+            struct
+            {
+                int16 dialogTextNo;
+                int64 textLength;
+                wchar_t text[textLength];
+            } indexTextData;
+        }
+    } dialogTextData;
+}

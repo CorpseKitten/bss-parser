@@ -1,0 +1,19 @@
+//------------------------------------------------
+//      File: itemexchangebynpc.bss
+//     Table: ItemExchangeByNpc_Table
+//------------------------------------------------
+local int32 a;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        int16 index;
+        int16 index;
+        int32 item_key;
+        int64 item_count;
+        int32 exchange_item_key;
+        int64 exchange_item_count;
+    } item_exchange_by_npc;
+}

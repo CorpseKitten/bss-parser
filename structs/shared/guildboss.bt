@@ -1,0 +1,20 @@
+//------------------------------------------------
+//   File: guildboss.bss
+//   Table: Boss_Table
+//------------------------------------------------
+typedef struct BodyData
+{
+	int16 CharacterKey;
+	byte  GuildBossId;
+	int16 CharacterKey2;
+	int32 SkillPointExp;
+	int64 GuildMoney;
+};
+
+struct Data
+{
+	int32 count;
+	BodyData bodyData[count] <optimize=false>;
+};
+
+Data data;

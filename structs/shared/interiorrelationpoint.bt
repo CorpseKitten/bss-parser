@@ -1,0 +1,23 @@
+//------------------------------------------------
+//      File: interiorrelationpoint.bss
+//     Table: InteriorRelationPoint_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        int16 character_key;
+        int16 character_key;
+        for (b = 0; b < 14; ++b) // should be 10
+        {
+            int32 on;
+        }
+        // 4 booleans here
+        int16 matchmaking_character_point;
+        int32 matchmaking_character_key;
+    } interior_relation_point;
+}

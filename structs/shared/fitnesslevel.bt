@@ -1,0 +1,27 @@
+//------------------------------------------------
+//   File: fitnesslevel.bss
+//   Table: FitnessLevel_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 typeCount;
+for (a = 0; a < typeCount; ++a)
+{
+    struct
+    {
+        int32 levelCount;
+        for (b = 0; b < levelCount; ++b)
+        {
+            struct
+            {
+                int32 expType;
+                int32 level;
+                int64 needExp;
+                float addStamina;
+                float addWeight;
+                float addHp;
+                float addMp;
+            } FitnessByLevelData;
+        }
+    } FitnessLevelByTypeData;
+}

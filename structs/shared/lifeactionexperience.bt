@@ -1,0 +1,20 @@
+//------------------------------------------------
+//      File: lifeactionexperience.bss
+//     Table: LifeActionEXP_Table 
+//------------------------------------------------
+
+struct BodyData
+{
+    int32		ItemKey;
+    int32		ItemKey;
+    byte		LifeActionType0;
+    byte		LifeActionType1;
+    int64		Exp0;
+    int64		Exp1;
+};
+
+struct
+{
+    int32   count;
+    BodyData data[count] <optimize=false>;
+} Data;

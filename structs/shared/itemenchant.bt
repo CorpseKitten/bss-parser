@@ -1,0 +1,86 @@
+//------------------------------------------------
+//   File: itemenchant.bss
+//   Table: 1_Table
+//------------------------------------------------
+local int32 a;
+local int32 b;
+int32 rowCount;
+for (a = 0; a < rowCount; ++a)
+{
+    struct {
+        int16 itemId;
+        int16 unk;
+        int64 itemNameLenght;
+        wchar_t itemName[itemNameLenght];
+        char unk;
+        char unk;
+        char unk;
+        int16 unk;
+        char unk;
+        char unk;
+        char unk;
+        int16 unk;
+        int16 unk;
+        char classes1[31];
+        char classes2[31];
+        char unk;
+        char unk;
+        int16 unk;
+        int32 unk;
+        int16 unk;
+        int32 unk;
+        char unk;
+        char zeroes[28];
+        char unk;
+        char unk;
+        char unk;
+        char zero[22];
+        int32 unk;
+        int16 unk;
+        int16 unk;
+        char skip[191]; // dynamic crap here to be found
+        int64 iconNameLenght;
+        wchar_t iconName[iconNameLenght];
+        int64 itemDescLenght;
+        wchar_t itemDescription[itemDescLenght];
+        int64 unk;
+        int32 unk;
+        char skp[57];
+        int32 unk;
+        char sp[15];
+        char unk;
+        char unk;
+        int32 unk;
+        int64 unk;
+        int16 endurance;
+        char unk;
+        int32 unk;
+        char unk;
+        char unk;
+        int16 unk; // enchant level?
+        char unk;
+        int16 itemId;
+        int16 unk;
+        int16 needEnchantItemId;
+        int16 unk;
+        int64 needEnchantItemCount;
+        int64 unk;
+        int64 unk;
+        int64 unk;
+        char fu[205];
+        int64 textLenght;
+        wchar_t text[textLenght];
+        char unk;
+        char fuck[16];
+        int64 stats1Lenght;
+        wchar_t stats1[stats1Lenght];
+        float unk; // float?
+        int64 stats2Lenght;
+        wchar_t stats2[stats2Lenght];
+        float unk; // float?
+        int64 stats3Lenght;
+        wchar_t stats3[stats3Lenght];
+        float unk; // float?
+        char end[359];
+    } itemData;
+}

@@ -1,0 +1,35 @@
+//------------------------------------------------
+//      File: houseinforeceipe.bss
+//     Table: ReceipeForTown_New
+//------------------------------------------------
+local int32 a;
+local int32 b;
+local int32 c;
+int32 count;
+
+for (a = 0; a < count; ++a)
+{
+    struct
+    {
+        int32 recipe_key;
+        int16 transfer_key;
+        int64 nameLen;
+        wchar_t name[nameLen];
+        byte group_type;
+
+        struct
+        {
+            for (b = 0; b < 5; ++b)
+            {
+                struct
+                {
+                    int32 exchange_key_count;
+                    for (c = 0; c < exchange_key_count; ++c)
+                    {
+                        int16 exchange_key;
+                    }
+                } exchange_key_entry;
+            }
+        } exchange_data;
+    } house_info_recipe;
+}
